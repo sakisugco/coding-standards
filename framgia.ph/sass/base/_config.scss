@@ -1,0 +1,91 @@
+*{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body{
+	font-family:"游ゴシック","YuGothic","Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","ＭＳ ゴシック",sans-serif;
+	font-size:16px;
+	line-height: 30px;
+	color: #232323;
+	position: relative;
+	@include lato-light;
+}
+
+
+.container{
+	width: 100%;
+	max-width: 1200px;
+	&.container-small{
+		max-width: 820px;
+	}
+}
+
+.row.rm-m{
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.rm-pd{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.d-n{
+	display: none;
+}
+
+.fix-w{
+	width: 100%;
+	max-width: 454px;
+	margin: 0 auto;
+}
+.table-row{
+	display: table-row;
+}
+
+a{
+	text-decoration: none;
+	&:hover,&:active,&:focus{
+		text-decoration: none;
+	}
+}
+
+.framgia-section{
+	@include max-screen ( 768px ){
+		margin-top: -60px;
+	}
+}
+
+.area-title{
+	text-align: center;
+	margin: 0 0 21px;
+	font-size: 36px;
+	line-height: 44px;
+	color: $cl-black;
+	@include lato-bold;
+	@include max-screen( 768px ){
+		font-size:26px;
+		line-height: 32px;
+		margin: 0 0 11px;
+	}
+}	
+
+
+.description{
+	font-size:16px;
+	line-height: 22px;
+	color: $cl-gray;
+	display: block;
+	margin: 0 0 50px;
+	text-align: center;
+	@include max-screen( 768px ){
+		margin: 0 0 32px;
+	}
+}
+
+.rs-ul{
+	list-style:none;
+	padding: 0;
+	margin: 0;
+}

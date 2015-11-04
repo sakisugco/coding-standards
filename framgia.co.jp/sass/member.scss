@@ -1,0 +1,285 @@
+@import "setup", "mixin-module", "extend-module";
+
+.l-member {
+  @extend .mod-center-1;
+}
+h2 {
+  width: 980px;
+  margin: 0 auto;
+  padding: 60px 0 30px 0;
+}
+
+.memberList {
+  @include clearfix;
+  @extend .mod-center-1;
+  margin-bottom: 30px;
+  li {
+    position: relative;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+  p {
+    margin: 0;
+    border-radius: 180px;
+    line-height: 0;
+    cursor: pointer;
+    background-color: $red;
+    
+    &:hover img {
+      opacity: 0.2;
+    }
+    &:hover span {
+      display: block;
+    }
+  }
+  dl {
+    margin: 8px 0 0 0;
+    width: 180px;
+    text-align: center;
+  }
+  dt {
+    margin: 0;
+    font-size: 1.8rem;
+  }
+  dd {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  span {
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 180px;
+    color: #fff;
+    font-size: 1.8rem;
+    position: absolute;
+    line-height: 180px;
+    text-align: center;
+  }
+  img {
+    @include css3(transition, 0.1s);
+    z-index: 0;
+    &.is-selected {
+      opacity: 0.2;
+      &:after {
+        content: "block";
+        color: #333;
+        position: absolute;
+        display: block;
+      }
+      &+ span {
+        display: block;
+      }
+    }
+  }
+
+  .m5 {
+    margin-right: 0 !important;
+  }
+
+}
+
+.stage {
+  display: none;
+  height: 290px;
+  background-color: #eee;
+  position:relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  .pPos {
+    font-size: 1.6rem;
+    margin-top: 6px;
+  }
+  .m1,
+  .m2,
+  .m3,
+  .m4,
+  .m5 {
+    display: none;
+    @extend .mod-center-1;
+    background-color: #eee;
+    position: absolute;
+    left: 50%;
+    margin-left: -490px;
+  }
+
+
+  .m1:after,
+  .m2:after,
+  .m3:after,
+  .m4:after,
+  .m5:after {
+    border: 20px solid transparent;
+    border-bottom-color: #eee;
+    border-top-width: 0;
+    top: -20px;
+    content: "";
+    display: lock;
+    position: absolute;
+    width: 0;
+  }
+
+
+
+  .m1:after {
+    left: 70px;
+  }
+  .m2:after {
+    left: 270px;
+  }
+  .m3:after {
+    left: 470px;
+  }
+  .m4:after {
+    left: 670px;
+  }
+  .m5:after {
+    left: 870px;
+  }
+}
+.is-opened {
+
+}
+
+.pName {
+  padding-top: 25px;
+}
+.l-fujimoto .pName { padding-top: 0; }
+.l-fujimoto .pDesc { line-height: 1.8; }
+.l-honma .pName { padding-top: 25px; }
+.l-kobayashi .pName { padding-top: 25px; }
+.l-dung .pName { padding-top: 25px; }
+.l-ngoc .pName { padding-top: 25px; }
+.l-ogura .pName { padding-top: 0; }
+.l-nakayama .pName { padding-top: 0; }
+
+.banner_homma {
+  position: absolute;
+  top: 60px;
+  left: 500px;
+}
+@media screen and (max-width: 767px) {
+
+  h2 {
+    width: 100%;
+    padding: 40px 20px 30px 20px;
+  }
+
+
+  .memberList {
+    margin-bottom: 30px;
+    li {
+      position: relative;
+      list-style: none;
+      float: left;
+      margin-right: 10px;
+    }
+    p {
+      margin: 10px 0 0 0;
+      border-radius: 120px;
+      line-height: 0;
+      text-align: center;
+      cursor: pointer;
+      background: none;
+      
+      &:hover img {
+        opacity: 1;
+      }
+      &:hover span {
+        display: none;
+      }
+    }
+    dl {
+      margin: 8px 0 0 0;
+      width: 130px;
+      text-align: center;
+    }
+    dt {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    dd {
+      margin: 0;
+      font-size: 1.0rem;
+    }
+    span {
+      display: none;
+      top: 0px;
+      left: 0px;
+      width: 180px;
+      color: #fff;
+      font-size: 1.8rem;
+      position: absolute;
+      line-height: 180px;
+      text-align: center;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      @include css3(transition, 0.1s);
+      z-index: 0;
+      &.is-selected {
+        opacity: 1;
+        &:after {
+          display: none;
+        }
+        &+ span {
+          display: none;
+        }
+      }
+    }
+
+    .m5 {
+      margin-right: 0 !important;
+    }
+
+  }
+
+
+  .stage {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    margin: 0;
+    padding: 5%;
+    box-sizing: border-box;
+    z-index: 10000;
+    .pPos {
+      font-size: 1.6rem;
+      margin-top: 6px;
+    }
+    .pPhoto {
+      display: none;
+    }
+    .m1,
+    .m2,
+    .m3,
+    .m4,
+    .m5 {
+      width: 90%;
+      height: 90%;
+      background-color: #eee;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      margin: 0;
+      padding: 5%;
+      overflow: scroll;
+      p {
+        line-height: 1.5;
+      }
+    }
+    & > div:after {
+      display:none;
+    }
+    .pName,.l-profile {
+      padding-top: 0 !important;
+    }
+  }
+
+}

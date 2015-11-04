@@ -1,0 +1,16 @@
+.about-box-area{
+	margin: -20px 0 0;
+	.about-box-content{
+		padding:90px 0 17px;
+	}
+
+	.area-title{
+		@include max-screen( 768px ){
+			margin: 0 0 28px;
+		}
+	}
+	
+	p{
+		color: $cl-gray;
+	}
+}

@@ -1,0 +1,97 @@
+@import "setup", "mixin-module", "extend-module";
+
+.l-recruit {
+  .fltRight {
+    padding: 0 0 40px 20px;
+  }
+  @extend .mod-center-1;
+  ul {
+    padding-left: 20px;
+  }
+
+  li {
+    list-style-position: outside;
+    line-height: 26px;
+  }
+  p {
+    width: 720px;
+  }
+  ol {
+    padding: 20px 50px;
+    margin: 20px auto 40px auto;
+    background-color: #eee;
+  }
+  dl, dt, dd{
+    margin: 0;
+    padding: 0;
+  }
+  dl {
+    @include clearfix;
+    background-color: #eee;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  dt {
+    margin: 0;
+    font-size: 16px;
+    padding: 20px 0;
+    padding-left: 20px;
+    float: left;
+    width: 160px;
+    border-top: 1px solid #ccc;
+  }
+  dd {
+    float: left;
+    width: 657px;
+    min-height: 24px;
+    padding: 20px 30px;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    background-color: #f8f8f8;
+
+    p {
+      width: auto;
+      font-size: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+.section {
+  @extend .mod-center-2;
+}
+
+@media screen and (max-width: 767px) {
+  .l-recruit {
+    p {
+      width: 100%;
+    }
+    dt {
+      margin: 0;
+      font-size: 16px;
+      padding: 10px 0;
+      padding-left: 20px;
+      float: none;
+      width: 100%;
+      border-top: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    dd {
+      float: none;
+      width: 100%;
+      box-sizing: border-box;
+      border-left: none;
+      padding: 20px;
+
+      p {
+        width: auto;
+        font-size: 14px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+}
+}

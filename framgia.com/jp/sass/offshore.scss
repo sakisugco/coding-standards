@@ -1,0 +1,56 @@
+@import "setup", "mixin-module", "extend-module";
+
+.l-offshore {
+  .fltRight {
+    padding: 0 0 40px 20px;
+  }
+  @extend .mod-center-1;
+  ol {
+    padding: 20px 50px;
+    margin: 20px auto 40px auto;
+    background-color: #eee;
+  }
+  ul {
+    padding: 20px 50px;
+    margin: 20px auto 40px auto;
+    background-color: #eee;
+  }
+
+  li {
+    list-style-position: inside;
+    line-height: 26px;
+  }
+  p {
+    width: 720px;
+  }
+}
+.section {
+  @extend .mod-center-2;
+}
+@media screen and (max-width: 767px) {
+
+  .l-offshore {
+    .fltRight {
+      padding: 0;
+      float: none;
+    }
+    ol {
+      padding: 20px 50px;
+      margin: 20px auto 40px auto;
+      background-color: #eee;
+    }
+    ul {
+      padding: 20px 10px;
+      margin: 20px auto 40px auto;
+      background-color: #eee;
+    }
+
+    li {
+      list-style-position: inside;
+      line-height: 26px;
+    }
+    p {
+      width: 100%;
+    }
+  }
+}

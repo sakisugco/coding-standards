@@ -1,0 +1,14 @@
+
+/**
+ * State Rules
+ */
+
+.is-nav-selected {
+  border-bottom: 4px solid $red;
+  & > a {
+    margin-bottom: -4px;
+  }
+  ul {
+  	margin-top: 4px;
+  }
+}

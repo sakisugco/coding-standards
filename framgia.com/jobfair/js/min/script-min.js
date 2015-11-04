@@ -1,0 +1,1 @@
+!function($){$(function(){$("a.scroll").smoothScroll()}),$.fn.smoothScroll=function(o){$(this).click(function(o){var t=300,n=$(this).attr("href"),l=$("#"==n||""==n?"html":n),c=l.offset().top-115;return $("body").animate({scrollTop:c},t,"swing"),$("html").animate({scrollTop:c},t,"swing"),!1})}}(jQuery);

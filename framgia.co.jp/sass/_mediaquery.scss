@@ -1,0 +1,175 @@
+@import "setup", "mixin-module", "extend-module";
+
+
+@media screen and (max-width: 979px) {
+
+  .l-main {
+      h1 {
+        width: 100%;
+        box-sizing: border-box;
+      }
+  }
+}
+@media screen and (max-width: 767px) {
+
+  body {
+    margin: 0;
+  }
+  header {
+    position: relative;
+  }
+  .l-main {
+      h1 {
+        font-size: 2.4rem;
+        padding: 25px 20px;
+        line-height: 1.5;
+      }
+  }
+  a {
+    @include css3(transition, none);
+  }
+  .l-header {
+    position: relative;
+    & > .gNav {
+      margin-left: 0;
+    }
+    & > .btn {
+      display: none;
+      margin: 0;
+      position: relative;
+      right: 0px;
+      width: 100%;
+    }
+    & > * {
+      float: none;
+    }
+  }
+  .gNav {
+    display: none;
+    content: 'mobile';
+    li {
+      float: none;
+      background-color: #fff;
+      &:hover {
+        & > a {
+        }
+      }
+    }
+  }
+  .l-stacked {
+    display: none;
+    position: relative;
+    background-color: #fff;
+    border-top: none;
+    box-shadow: none;
+    & > li {
+      float: none;
+      & > a {
+        padding: 10px 20px;
+      }
+    }
+  }
+  .l-inner {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .gNav {
+    li > a {
+      @include css3(transition, none);
+    }
+  }
+  .spMenu {
+    display: block;
+  }
+
+
+  .news {
+    & > dt {
+      width: 100%;
+      float: none;
+    }
+    & > dd {
+      width: 100%;
+      float: none;
+      margin: 0 0 10px 0;
+    }
+  }
+
+  .overlay {
+    visibility: visible;
+  }
+
+  .l-text {
+    float: none;
+    width: 100%;
+    & > h2 {
+      margin-top: 0;
+    }
+    p {
+      width: 100%;
+    }
+  }
+  .l-image {
+    float: none;
+    width: 100%;
+    p {
+      margin: 0;
+    }
+  }
+  div,h1,h2,h3,h4 {
+    box-sizing: border-box;
+  }
+
+
+  .l-logolist {
+    & > ul {
+      width: 100%;
+      list-style: none;
+    }
+    li {
+      display: block;
+      float: none;
+      height: auto;
+      margin-bottom: 10px;
+      padding-right: 0;
+      a {
+      }
+      img {
+        height: auto;
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 479px) {
+  /*
+  .l-header {
+    width: 100%;
+    & > .gNav {
+      margin-left: 0;
+    }
+    & > * {
+      float: none;
+    }
+  }
+  .gNav {
+    background-color: #fff;
+    .l-inline {
+      & > li {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+      }
+    }
+  }
+  .btn {
+    display: none !important;
+  }
+  */
+}
+
+
+
+
+
+

@@ -1,0 +1,236 @@
+@import "setup", "mixin-module", "extend-module";
+
+/**
+ * Layout Rules
+ */
+
+.l-area {
+  padding: 80px 0;
+}
+.l-inner { 
+  @include clearfix;
+  position: relative;
+  width: 980px;
+  margin: 0 auto;
+}
+.l-inline > li {
+  float: left;
+  &:hover {
+    & > a {
+      background-color: $red;
+      color: #fff;
+    }
+  }
+}
+.l-stacked {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-top: 4px solid $red;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.25);
+  & > li {
+    float: none;
+    & > a {
+      padding: 10px 20px;
+    }
+  }
+}
+header {
+  width: 100%;
+  height: 60px;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+  background-color: #fff;
+}
+.l-header {
+  @extend .l-inner;
+  position: relative;
+  & > .logo {
+    width: 136px;
+    margin: 0;
+    padding: 10px 0;
+  }
+  & > .gNav {
+    margin-left: 50px;
+  }
+  & > .btn {
+    margin-top: 12px;
+    position: absolute;
+    right: 0px;
+  }
+  & > * {
+    float: left;
+  }
+
+  ul {
+    list-style: none;
+  }
+  .l-inline > li > a {
+    height: 60px;
+    min-width: 40px;
+    line-height: 60px;
+    padding: 0 15px 0 15px;
+    text-align: center;
+    font-size: 13px;
+  }
+  .l-stacked > li > a {
+    font-size: 13px;
+  }
+}
+#contents {
+  padding-bottom: 80px;
+}
+.l-main {
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.25);
+    background-color: $red;
+    h1 {
+      width: 980px;
+      padding: 40px 0;
+      margin: 0 auto;
+      font-size: 30px;
+      font-weight: normal;
+      letter-spacing: 3px;
+      color: #fff;
+      text-shadow: 1px 1px 0px #b73c30;
+    }
+}
+.l-sns-top {
+  @extend .mod-center-1;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.l-sns-foot {
+  @extend .mod-center-1;
+  @include clearfix;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.l-sns-wrap {
+  float: right;
+}
+.l-menu {
+  @extend .l-inner;
+  @include clearfix;
+  margin: 60px auto;
+  overflow: hidden;
+}
+.l-logolist {
+  background-color: #fff;
+  padding: 40px 0;
+  & > ul {
+    @extend .l-inner;
+    @include clearfix;
+    list-style: none;
+  }
+  li {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+    padding-right: 80px;
+  }
+}
+.l-footmenu {
+  background: url(../images/bg_footmenu.png);
+  padding: 12px 0;
+  & > ul {
+    @extend .l-inner;
+    @include clearfix;
+    text-align: right;
+    margin-left: auto;
+  }
+  li {
+    display: inline-block;
+    margin-left: 30px;
+  }
+  .link {
+    background: url(../images/icon_arrow_01.png) left center no-repeat;
+    color: #fff;
+    &:hover {
+      color: #333;
+    }
+  }
+}
+.l-copyright {
+  height: 140px;
+  padding-top: 60px;
+  text-align: center;
+  background-color: #eee;
+  small {
+    font-size: 14px;
+  }
+}
+.l-inquiry {
+  background-color: #eee;
+  padding: 40px 0 60px 0;
+  text-align: center;
+  p {
+    @extend .mod-center-1;
+    font-size: 16px;
+    text-align: center;
+  }
+  .btn {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    height: 48px;
+    line-height: 48px;
+    width: 260px;
+  }
+}
+
+
+
+
+.l-profile {
+  @include clearfix;
+  background-color: #eee;
+  padding: 30px 0 0 0;
+  .pPhoto {
+    float: left;
+    margin: 0 30px 0 0;
+    line-height: 1;
+  }
+  .pDesc {
+    margin: 0;
+  }
+}
+
+
+@media screen and (max-width: 979px) {
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 479px) {
+  /*
+  .l-header {
+    width: 100%;
+    & > .gNav {
+      margin-left: 0;
+    }
+    & > * {
+      float: none;
+    }
+  }
+  .gNav {
+    background-color: #fff;
+    .l-inline {
+      & > li {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+      }
+    }
+  }
+  .btn {
+    display: none !important;
+  }
+  */
+}
+
+
+
+
+
+

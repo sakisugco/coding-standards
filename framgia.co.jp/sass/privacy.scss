@@ -1,0 +1,22 @@
+@import "setup", "mixin-module", "extend-module";
+
+.l-privacy {
+  section {
+    margin-top: 60px;
+  }
+  p {
+    margin-top: 30px;
+    padding: 0 50px;
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  ol {
+    padding-left: 20px;
+    padding: 0 50px 0 70px;
+    font-size: 14px;
+    line-height: 1.8;
+    li {
+      margin: 16px 0;
+    }
+  }
+}
