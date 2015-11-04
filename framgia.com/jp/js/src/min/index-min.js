@@ -1,0 +1,1 @@
+!function($){function n(){$(".carousel-prev").click(function(){return!1})}$(function(){n()})}(jQuery);

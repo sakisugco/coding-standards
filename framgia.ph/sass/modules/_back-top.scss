@@ -1,0 +1,31 @@
+.back-top{
+	opacity: 0;
+	visibility: hidden;
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	position: fixed;
+	bottom: 50px;
+	right: 30px;
+	background: #c63b32;
+	color: #ffffff;
+	cursor: pointer;
+	z-index: 999;
+	@include a-hover;
+	@include max-screen( 768px ){
+		width: 35px;
+		height: 35px;
+		line-height: 35px;
+		right: 15px;
+		bottom: 5px;
+	}
+	&.fadeIn{
+		opacity: 1;
+		visibility: visible;
+		bottom: 70px;
+		@include max-screen( 768px ){
+    		bottom: 15px;
+		}
+	}
+}

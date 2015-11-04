@@ -1,0 +1,631 @@
+@import "setup", "mixin-module", "extend-module";
+h1 {
+  padding-top: 0;
+}
+.l-case {
+  @extend .mod-center-1;
+  margin-top: 30px;
+  h1 {
+    line-height: 1.6;
+  }
+}
+.l-profile {
+  margin-top: 20px;
+  padding: 20px;
+}
+.l-profile2 {
+  padding: 10px 10px 10px 20px;
+  background-color: #fff;
+  height: 155px;
+  line-height: 1.5;
+}
+.l-profile-cakes .pBody {
+  background: url(../images/cakes/img_01.jpg) right top no-repeat #fff;
+  height: 155px;
+  padding-right: 350px;
+}
+
+.l-profile-company {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  .pBody {
+    padding-right: 350px;
+    p {
+      font-size: 14px;
+      line-height: 1.8;
+    }
+  }
+}
+.l-profile-uzabase {
+  height: 155px;
+  .pBody {
+    background: url(../images/uzabase/img_01.jpg) right top no-repeat #fff;
+  }
+}
+.l-profile-basic {
+  height: 125px;
+  .pBody {
+    background: url(../images/basic/basicinc-logo.png) 700px 35px no-repeat #fff;
+    font-size: 14px;
+    padding-right: 350px;
+  }
+}
+.l-profile-tsumiki {
+  height: 174px;
+  .pBody {
+    height: 174px;
+    background: url(../images/tsumiki/tsumiki-logo.jpg) 620px 0px no-repeat #fff;
+    font-size: 14px;
+    padding-right: 350px;
+  }
+}
+.l-profile-2 {
+  @include clearfix;
+  position: relative;
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  .pPhoto {
+    position: absolute;
+    left: 0px;
+  }
+  .pName {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  }
+  .pPos {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  }
+  .l-profile-2-inner {
+    margin-top: 30px;
+    padding-left: 220px;
+    min-height: 190px;
+  }
+}
+
+.mainVisual {
+  position: relative;
+  h1 {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 14px;
+    bottom: 18px;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    font-weight: normal !important;
+    text-shadow: none;
+    line-height: 1.5;
+    strong {
+      display: inline-block;
+      font-size: 28px;
+      line-height: 1;
+      padding: 6px 0 10px 0;
+    }
+  }
+}
+.title {
+  margin: 20px 0;
+}
+.lead {
+  margin: 0;
+}
+.interview {
+
+  h1 {
+    color: #333;
+    font-size: 24px;
+    line-height: 1.6;
+    padding-left: 48px;
+    width: 100%;
+    background: url(../images/bg_interview.png) left 18px no-repeat;
+  }
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: $red;
+    width: 100%;
+  }
+}
+
+.l-wrap {
+  @include clearfix;
+  p {
+    width: 580px;
+  }
+}
+.l-text {
+  float: left;
+  width: 570px;
+  h2 {
+    padding-left: 40px;
+  }
+  p {
+    padding-left: 40px;
+    width: 100%;
+  }
+}
+.l-image {
+  float: right;
+  width: 308px;
+  padding-top: 60px;
+  text-align: center;
+  p {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0;
+    text-align: left;
+  }
+  .caption {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    display: inline-block;
+  }
+  & > p {
+    margin-top: 0;
+  }
+}
+.l-image-isolated {
+  margin: 40px 0;
+  p {
+    margin: 0;
+    &.caption {
+      font-size: 12px;
+    }
+  }
+}
+.l-profile-right {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 9px;
+  p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  .pName {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  }
+  .pPos {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  }
+}
+
+
+.l-overview {
+  padding: 40px 0;
+  background-color: #eee;
+  & > h1 {
+    @extend .mod-center-1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .pName {
+    margin-top: 30px;
+  }
+  .l-profile {
+    @extend .mod-center-1;
+    padding: 20px 0 40px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .l-textBody {
+      margin-top: 60px;
+    p {
+      @extend .mod-center-4;
+    }
+  }
+}
+
+.pPhoto img {
+  border-radius: 230px;
+}
+.pCaption {
+  width: 230px !important;
+  text-align: center !important;
+  font-size: 12px;
+}
+.l-overview-bse {
+  @extend .l-overview;
+    background-color: #f8f8f8;
+  .l-textBody {
+    h1 {
+      @extend .mod-center-3;
+      font-size: 18px;
+      color: #333;
+      margin: 40px auto 15px auto;
+    }
+  }
+  .l-profile {
+    background-color: #f8f8f8;
+  }
+
+}
+
+.l-overview-uzabase {
+  @include clearfix;
+  padding: 40px 0;
+  background-color: #eee;
+  & > h1 {
+    @extend .mod-center-1;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h2 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  background-color: #eee;
+  .l-wrap {
+    @extend .mod-center-1;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #fff;
+  }
+  .l-wrap-top {
+    border-top: none;
+  }
+  .l-wrap-bottom {
+    border-bottom: none;
+  }
+  .l-text {
+    float: left;
+    width: 580px;
+  }
+  .l-image {
+    float: right;
+    width: 309px;
+    padding-top: 50px;
+  }
+  .name {
+    text-align: right;
+    font-weight: bold;
+  }
+
+}
+.l-inquiry {
+  margin-top: 80px;
+}
+.pagination {
+  width: 600px;
+  overflow: hidden;
+  margin-top: 60px;
+  div, li {
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #fff;
+  }
+  .preview {
+    margin: 0 16px 0 0;
+  }
+  .next {
+    float: right;
+    margin: 0;
+  }
+  a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    border: 1px solid #999;
+    &:hover {
+      background-color: $red;
+      border: 1px solid $red;
+      color: #fff;
+    }
+  }
+  .is-selected {
+    background-color: $red;
+    border: 1px solid $red;
+    color: #fff;
+    cursor: default;
+  }
+  span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #999;
+    background-color: #eee;
+    color: #999;
+  }
+}
+.nextpage {
+  margin: 20px 0 0 40px;
+  span {
+    display: inline-block;
+    background-color: $red;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 10px 0 15px;
+    margin-right: 30px;
+    position: relative;
+    &:after {
+        position: absolute;
+        content: '';
+        top: 0px;
+        right: -30px;
+        width: 0px;
+        height: 0px;
+        border: 15px solid transparent;
+        border-left-color: $red;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: $red;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mainVisual {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h1 {
+      display: block;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      left: 0px;
+      bottom: 0px;
+      height: auto;
+      color: #333;
+      font-size: 1.8rem;
+      text-shadow: none;
+      line-height: 1.5;
+      strong {
+        display: inline-block;
+        font-size: 1.8rem;
+        line-height: 1.5;
+        padding: 6px 0 10px 0;
+      }
+    }
+  }
+  .interview {
+
+    h1 {
+      padding-left: 0;
+      text-indent: 48px;
+      font-size: 2.0rem;
+    }
+  }
+  .l-wrap {
+    p {
+      width: 100%;
+    }
+  }
+  .l-text {
+    float: none;
+    width: 100%;
+    h2 {
+      padding-left: 0;
+    }
+    p {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+  .l-image {
+    float: none;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .l-image-isolated {
+    margin: 40px 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .l-profile {
+    .pPhoto {
+      float: none;
+      margin: 0;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .pName {
+      text-align: left;
+      font-size: 2.2rem;
+    }
+  }
+  .l-overview {
+    padding: 40px 20px;
+  }
+  .l-overview-bse {
+    padding: 40px 20px;
+  }
+
+  .l-overview-uzabase {
+    .l-text {
+      float: none;
+      width: 100%;
+    }
+    .l-image {
+      float: none;
+      width: 100%;
+    }
+
+  }
+
+  .l-profile-uzabase .pBody {
+    background: none;
+    height: auto;
+    padding-right: 0;
+    p {
+      line-height: 1.5;
+    }
+  }
+  .l-profile-cakes .pBody {
+    background: none;
+    height: auto;
+    padding-right: 0;
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  .l-profile-company {
+    height: auto;
+    .pBody {
+      padding: 0;
+    }
+  }
+  .l-profile-2 {
+    .pPhoto {
+      position: relative;
+    }
+    .l-profile-2-inner {
+      padding-left: 0;
+    }
+  }
+
+  .l-uzabase .l-profile2 {
+    height: auto;
+  }
+  .pagination {
+    width: 100%;
+    div, li {
+      width: 24px;
+      height: 24px;
+      line-height: 22px;
+      margin-right: 5px;
+    }
+    .preview {
+      margin: 0 5px 0 0;
+    }
+    .next {
+      float: right;
+      margin: 0;
+    }
+    a {
+      display: block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+      &:hover {
+        background-color: $red;
+        border: 1px solid $red;
+        color: #fff;
+      }
+    }
+    span {
+      width: 22px;
+      height: 22px;
+      line-height: 22px;
+    }
+  }
+
+  .nextpage {
+    margin-left: 0;
+  }
+  .l-tsumiki,
+  .l-basic {
+    .interview {
+      h1 {
+        padding: 0;
+        text-indent: 0px;
+      }
+    }
+  }
+}
+
+
+.l-basic {
+  .mainVisual
+  h1 {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    strong {
+      display: inline-block;
+      font-size: 28px;
+      line-height: 1;
+      padding: 6px 0 10px 0;
+    }
+  }
+}
+.l-tsumiki {
+  .mainVisual h1 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.5;
+    strong {
+      font-weight: normal;
+      display: inline-block;
+      font-size: 28px;
+      line-height: 1;
+      padding: 6px 0 10px 0;
+    }
+  }
+  .l-text {
+    h2 {
+      padding-left: 0;
+    }
+    p {
+      padding-left: 0;
+      width: 100%;
+    }
+  }
+}
+.l-tsumiki,
+.l-basic {
+  .interview {
+    h1 {
+      color: #333;
+      font-size: 21px;
+      line-height: 1.6;
+      width: 100%;
+      padding: 0;
+      background: none;
+    }
+    h2 {
+      box-sizing: border-box;
+      margin-top: 0;
+      font-size: 16px;
+      width: 100%;
+      padding-left: 24px;
+      background: url(../images/bg_interview_02.png) left 12px no-repeat;
+    }
+    p {
+      padding: 0;
+    }
+  }
+}

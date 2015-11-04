@@ -1,0 +1,225 @@
+@charset "utf-8";
+/* CSS Document */
+
+.portfolios {
+  max-width: 980px;
+  margin: auto;
+  padding-top: 60px;
+}
+
+.portfolios h3 {
+  margin: 0;
+  line-height: 1;
+}
+.portfolios h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.portfolios .block-grid {
+  display: block;
+  padding: 0;
+  margin: 0 -1.5em;
+  zoom: 1;
+}
+
+.block-grid:before,
+.block-grid:after {
+  display: block;
+  height: 0;
+  visibility: hidden;
+  content: "\0020";
+}
+.block-grid:after {
+  clear: both;
+}
+
+.portfolios .block-grid > li {
+  height: auto;
+  float: left;
+  padding: 0 1.5em 3em;
+  list-style-type: none;
+}
+
+.portfolios ul.inline-list-custom li {
+  margin-left: 0 !important;
+}
+
+.portfolios .thumbnail {
+  margin-bottom: -0.5em;
+  max-width: 310px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.25);
+	box-shadow: 0 1px 3px rgba(0,0,0,.25);
+}
+
+.thumbnail-case {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail-case .hover {
+  display: none;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-size: 16px;
+}
+
+.thumbnail-case .hover .button {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  background: url(../images/arrow.png) 196px 84px no-repeat;
+  width: 100%;
+  height: 100%;
+  line-height: 22px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 80px 0 0 80px;
+}
+
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.portfolios img, .portfolios object, .portfolios embed {
+  max-width: 100%;
+  height: auto;
+}
+
+object, embed {
+  height: 100%;
+}
+
+.portfolios img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+@media only screen and (min-width: 40.063em) {
+  .block-grid > li {
+    width: 33.33333%;
+    padding: 0 1.5em 3em;
+  }
+
+}
+.columns {
+  position: relative;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  width: 100%;
+}
+
+.thumbnail-caption {
+  padding: 20px;
+  position:relative;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.portfolios h3 {
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+}
+.portfolios h4 {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #888;
+}
+
+.caption-link {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 11px;
+  text-decoration: none;
+  color: #1287b1;
+  line-height:18px;
+  padding: 2px 8px 0px 8px;
+  border: 1px solid #1287b1;
+  border-radius: 4px;
+  transition: color 0.2s ease-out;
+}
+
+.portfolios .category-source {
+  margin-top:20px;
+}
+
+.tags {
+  height: 20px;
+  line-height: 20px;
+  font-size: 11px;
+  color: #fff;
+  display: inline-block;
+  padding: 0px 5px;
+  border-radius: 4px;
+  min-width: 50px;
+  text-align:center;
+  margin-right: 5px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.ror {
+  background: #bd1103;
+}
+
+.java {
+  background: #c7bc6f;
+}
+
+.aws {
+  background: #1287b1;
+}
+
+.elasticsearch {
+  background: #4f723a;
+}
+
+.symfony {
+  background: #545454;
+}
+
+.sql {
+  background: #e28e8b;
+}
+
+.c {
+  background: #3594ff;
+}
+
+.js {
+  background: #54A3A1;
+}
+
+.db {
+  background: #947960;
+}
+
+.android {
+  background: #F36F51;
+}
+
+.ios {
+  background: #4BB7B0;
+}
+
+.php {
+  background: #3A98D7;
+}

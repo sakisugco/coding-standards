@@ -1,0 +1,70 @@
+.home-box-area{
+	padding: 70px 0 0;
+	.banner-box-content{
+		background: url(images/banner.jpg) no-repeat top left;
+		background-size: contain;
+		background-attachment: fixed;
+		text-align: center;
+		padding: 148px 0 160px;
+		position: relative;
+		transition: padding 0.3s ease 0s;
+		-moz-transition: padding 0.3s ease 0s;
+		-webkit-transition: padding 0.3s ease 0s;
+		-ms-transition: padding 0.3s ease 0s;
+		@include max-screen( 1300px ){
+			padding: 127px 0 120px;
+		}
+		@include max-screen( 1170px ){
+			padding: 80px 0 75px;
+		}
+		@include max-screen( 992px ){
+			background-size:inherit;
+			background-position: top center;
+		}
+		
+		&:before{
+			content:'';
+			display: block;
+			position: absolute;
+			top:0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			background: rgba(0, 0, 0, 0.35);
+		}
+		.container{
+			position: relative;
+		}
+	}
+	.title{
+		margin: 0;
+		font-size:50px;
+		line-height: 60px;
+		color: $cl-white;
+		@include max-screen( 992px ){
+			font-size: 45px;
+			line-height: 50px;
+		}
+		@include max-screen( 768px ){
+			font-size: 32px;
+			line-height: 37px;
+		}
+	}
+	.contact-us{
+		font-size:18px;
+		line-height: 24px;
+		color: $cl-white;
+		background: #c63b32;
+		display: inline-block;
+		letter-spacing: 3px;
+		padding: 13px 29px;
+		@include lato;
+		@include uppercase;
+		@include a-hover;
+		@include max-screen( 768px ){
+			font-size:13px;
+			line-height: 18px;
+			padding: 13px 18px;
+		}
+	}
+}

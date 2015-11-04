@@ -1,0 +1,117 @@
+@import "setup", "mixin-module", "extend-module";
+
+.l-stick {
+	@extend .mod-center-2;
+	margin-bottom: 40px;
+}
+.stick {
+
+}
+.stickHead {
+  @extend .mod-center-1;
+  @include css3(transition, 0.1s);
+  cursor: pointer;
+  background-color: #ddd;
+  padding: 15px 0;
+  border-bottom: 1px solid #fff;
+    position: relative;
+  h1 {
+  	@extend .mod-center-2;
+  	margin-top: 0;
+  	margin-bottom: 0;
+    padding-top: 0;
+    color: #666;
+    text-shadow: none;
+    font-size: 24px;
+    line-height: 40px;
+    span {
+    	background-color: #fff;
+    	display: inline-block;
+    	width: 40px;
+    	height: 40px;
+    	text-align: center;
+    	margin-right: 14px;
+    	border-radius: 20px;
+    }
+  }
+  img {
+    @include css3(transition, 0.3s);
+    position: absolute;
+    top: 19px;
+    right: 30px;
+    &.is-opened {
+      transform:rotate(90deg);
+      -ms-transform:rotate(90deg);
+      -webkit-transform:rotate(90deg);
+    }
+    &.is-closed {
+      transform:rotate(0deg);
+      -ms-transform:rotate(0deg);
+      -webkit-transform:rotate(0deg);
+    }
+  }
+  &:hover {
+  	background-color: $red;
+  	span {
+  		color: $red;
+  	}
+  	h1 {
+  		color: #fff;
+  	}
+  }
+}
+.stickHead.is-closed {
+  background-color: #eee;
+  span {
+    color: #666;
+  }
+  h1 {
+    color: #666;
+  }
+}
+.stickHead.is-opened {
+  background-color: $red;
+  span {
+    color: $red;
+  }
+  h1 {
+    color: #fff;
+  }
+  img {
+
+  }
+}
+
+.description {
+	@extend .mod-center-3;
+  display: none;
+  padding-bottom: 40px;
+	h2 {
+	  margin-top: 40px;
+	}
+}
+
+
+.l-environment,
+.l-tools {
+	@extend .mod-center-1;
+	ul {
+		@include clearfix;
+		width: 720px;
+		padding: 20px 50px;
+		margin: 20px auto 20px auto;
+		background-color: #eee;
+	}
+	li {
+		float: left;
+		width: 360px;
+		list-style-position: inside;
+		line-height: 24px;
+	}
+	section {
+		@extend .mod-center-3;
+	}
+	.section {
+		@extend .mod-center-3;
+	}
+}

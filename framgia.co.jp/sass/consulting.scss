@@ -1,0 +1,340 @@
+@import "setup", "mixin-module", "extend-module";
+body {
+  background-color: #fff;
+}
+h2 {
+  margin-top: 50px;
+}
+.l-consulting {
+	@extend .mod-center-1;
+}
+
+.l-hr {
+  .scheme {
+    position: relative;
+    h2 {
+      width: 625px;
+      position: absolute;
+      top: 0px;
+      height: 24px;
+      line-height: 24px;
+      background-color: $red;
+      color: #fff;
+      margin: 0;
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+      text-shadow: none;
+    }
+    margin-top: 30px;
+    @include clearfix;
+  }
+  dl {
+    @include clearfix;
+    position: relative;
+    margin: 0;
+    padding: 30px 0 45px 0;
+    width: 625px;
+    float: left;
+  }
+  dt {
+    position: absolute;
+    bottom: 0;
+    width: 130px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #a6a6a6;
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    &.s2 {
+      left: 165px;
+    }
+    &.s3 {
+      left: 330px;
+    }
+    &.s4 {
+      left: 495px;
+    }
+  }
+  dd {
+    margin: 20px 0 0 0;
+    float: left;
+    padding-right: 35px;
+    background: url(../images/icon_cursor_02.png) 200px 100px no-repeat;
+    &.s4 {
+      padding: 0;
+    }
+  }
+  .program {
+    margin-top: 60px;
+    @include clearfix;
+    .lead {
+      width: 600px;
+      float: left;
+    }
+  }
+}
+.project_case {
+  float: right;
+  padding: 16px 10px;
+  width: 220px;
+  background-color: #eee;
+  h3 {
+    width: 220px;
+    height: 24px;
+    line-height: 24px;
+    background: none;
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+  }
+  ul {
+    @include clearfix;
+    list-style-position: outside;
+    padding: 10px 0 0 20px;
+  }
+  li {
+    margin-top: 8px;
+    font-size: 12px;
+  }
+}
+.theme {
+  width: 100%;
+  border-collapse: collapse;
+  th, td {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+}
+.firmsize {
+  margin-top: 30px;
+  border-collapse: collapse;
+  th, td {
+    border: 1px solid #ccc;
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  thead {
+    .sub {
+      td {
+        font-size: 12px;
+      }
+    }
+    th, td {
+      text-align: center;
+      background-color: #eee;
+      white-space: nowrap;
+    }
+  }
+}
+.l-wrap {
+	@include clearfix;
+  @extend .mod-center-2;
+}
+.l-text {
+	float: left;
+	width: 520px;
+	margin: 0;
+  & > h2 {
+    margin-top: 0;
+  }
+  p {
+    width: 520px;
+  }
+}
+.l-image {
+	float: right;
+	width: 340px;
+	p {
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+	.caption {
+		font-size: 12px;
+		line-height: 1.5;
+		margin: 0 0 30px 0;
+	}
+  & > p {
+    margin-top: 0;
+  }
+}
+.lead {
+
+  @extend .mod-center-2;
+  margin-top: 0;
+}
+.seo {
+  margin-top: 30px;
+}
+.case_example {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.example {
+  float: left;
+  width: 278px;
+  height: 258px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  &:first-child {
+    margin-right: 30px;
+  }
+  &:nth-child(2) {
+    margin-right: 30px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  ul {
+    padding: 10px 0 0 30px;
+    li {
+      margin-top: 10px;
+    }
+  }
+  p {
+    margin: 0;
+    padding: 20px;
+    font-size: 14px;
+    &.category {
+      text-align: center;
+      background: #ccc;
+      margin: 10px;
+      color: #fff;
+      padding: 3px 0;
+      font-size: 16px;
+      &.category-web {
+        background-color: #50B6B0;
+      }
+      &.category-seo {
+        background-color: #F2734A;
+      }
+      &.category-infra {
+        background-color: #b3bec6;
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .l-hr {
+    .scheme {
+      position: relative;
+      h2 {
+        width: 100%;
+        position: relative;
+        top: 0px;
+      }
+      margin-top: 30px;
+      @include clearfix;
+    }
+    dl {
+      @include clearfix;
+      position: relative;
+      margin: 0;
+      padding: 30px 0 45px 0;
+      width: 100%;
+      float: none;
+    }
+    dt {
+      position: relative;
+      margin: 20px auto 10px auto;
+      width: 90%;
+      height: 24px;
+      text-align: center;
+      &.s2 {
+        left: 0px;
+      }
+      &.s3 {
+        left: 0px;
+      }
+      &.s4 {
+        left: 0px;
+      }
+    }
+    dd {
+      margin: 10px 0 0 0;
+      float: none;
+      padding-right: 0;
+      text-align: center;
+      background: url(../images/icon_cursor_02.png) 200px 100px no-repeat;
+      img {
+        height: auto;
+      }
+      &.s4 {
+        padding: 0;
+      }
+    }
+    .program {
+      margin-top: 60px;
+      @include clearfix;
+      .lead {
+        width: 100%;
+        float: none;
+      }
+    }
+  }
+
+  .project_case {
+    float: none;
+    padding: 16px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    h3 {
+      width: 100%;
+      background: none;
+      color: #333;
+      text-align: center;
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+    }
+    ul {
+      @include clearfix;
+      list-style-position: outside;
+      padding: 10px 0 0 20px;
+    }
+    li {
+      margin-top: 8px;
+      font-size: 12px;
+    }
+  }
+  .example {
+    float: none;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .l-text {
+    float: none;
+    width: 100%;
+    & > h2 {
+      margin-top: 0;
+    }
+    p {
+      width: 100%;
+    }
+  }
+  .l-image {
+    float: none;
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

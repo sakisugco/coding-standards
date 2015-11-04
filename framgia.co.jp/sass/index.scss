@@ -1,0 +1,785 @@
+@import "setup", "mixin-module", "extend-module";
+
+/**
+ * State Rules
+ */
+
+
+.l-more {
+  text-align: right;
+}
+
+.index {
+  .l-main {
+    height: 420px;
+    background: url(../images/bg_index_main.png) center top no-repeat;
+    background-color: #fcfcfc;
+    p {
+      position: relative;
+      width: 980px;
+      margin: 0 auto;
+    }
+    p > img {
+      position: absolute;
+      top: 40px;
+      right: 0px;
+      margin: 0;
+    }
+  }
+  .l-news {
+    float: left;
+    width: 580px;
+  }
+  .l-facebook {
+    float: right;
+    width: 350px;
+    .fb-page {
+      margin-bottom: 30px;
+    }
+  }
+  h1 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .l-offshore {
+    overflow: visible;
+  }
+  .l-offshore-inner {
+    overflow: hidden;
+  }
+  .l-offshore-stage {
+    position: relative;
+    left: 0px;
+    width: 9999px;
+  }
+  .slide {
+    width: 100%;
+    height: 420px;
+    background: url(../images/bg_index_main.png) center top no-repeat;
+    float: left;
+  }
+}
+
+.portal {
+  .l-solution {
+    padding: 40px 0 0 0;
+    background-color: #fff;
+  }
+  .l-main {
+    position: relative;
+    height: 420px;
+    background: none #fff;
+    p {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+      &.s1 {
+        background: url(../images/main_portal_01.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &.s2 {
+        background: url(../images/main_portal_02.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &.s3 {
+        background: url(../images/main_portal_03.jpg) center center no-repeat;
+        background-size: cover;
+      }
+      &.s4 {
+        background: url(../images/main_portal_04.jpg) center center no-repeat;
+        background-size: cover;
+      }
+    }
+    p > img {
+      display: none;
+      position: static;
+      margin: 0;
+    }
+    .copy {
+      position: absolute;
+      top: 120px;
+      left: 50%;
+      display: block;
+      width: 587px;
+      height: 37px;
+      margin: 0 0 0 -293px;
+      z-index: 50;
+    }
+  }
+  .slide {
+    background: none;
+    position: relative;
+    height: 420px;
+    overflow: hidden;
+    &:before {
+      content: "";
+      width: 100%;
+      height: 420px;
+      position: absolute;
+      z-index: 10;
+      background: url(../images/main_portal_map.png) center -200px no-repeat;
+    }
+  }
+  .solution {
+    width: 100%;
+    background-color: #eee;
+    .solution-wrap {
+      @include clearfix;
+      width: 980px;
+      margin: 0 auto;
+      .btn {
+        margin: 0 auto;
+        width: 180px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.6rem;
+      }
+    }
+    h2 {
+      height: 84px;
+      padding: 16px 0 0 130px;
+      line-height: 28px;
+      font-size: 2.6rem;
+      font-weight: bold;
+      span {
+        font-size: 1.8rem;
+      }
+    }
+    .solution-consulting {
+      width: 485px;
+      padding: 0 0 40px 0;
+      float: left;
+      border-right: 5px solid #f8f8f8;
+      h2 {
+        color: #3498db;
+        background: url(../images/icon_portal_consulting.png) left top no-repeat;
+        margin-left: 30px;
+      }
+      li {
+        width: 136px;
+        margin-right: 24px;
+      } 
+    }
+    .solution-offshore {
+      width: 485px;
+      padding: 0 0 40px 0;
+      float: left;
+      border-left: 5px solid #f8f8f8;
+      h2 {
+        color: #e74d3d;
+        background: url(../images/icon_portal_offshore.png) left top no-repeat;
+        margin-left: 90px;
+      }
+      li {
+        width: 200px;
+        margin-left: 40px;
+      } 
+      .btn {
+        margin: 0 auto;
+        @include round-btn(180px, 40px, #e74d3d);
+        &:hover {
+          background-color: #a7382c;
+        }
+      }
+    }
+    ul {
+      margin-top: 40px;
+      @include clearfix;
+    }
+    li {
+      float: left;
+      list-style: none;
+      h3 {
+        font-size: 1.4rem;
+        border-bottom: 1px solid #333;
+        width: 136px;
+        margin: 0 auto 10px auto;
+        text-align: center;
+        padding-bottom: 5px;
+      }
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+    } 
+  }
+}
+.l-news-wrap {
+  background-color: #fff;
+}
+.l-office {
+  background-color: #eee;
+  .office {
+    @include clearfix;
+    width: 980px;
+    margin: 0 auto;
+  }
+  li {
+    width: 300px;
+    float: left;
+    list-style: none;
+  }
+  h2 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  p {
+    font-size: 1.3rem;
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .office-info {
+    padding-left: 140px;
+    height: 160px;
+  }
+  .tokyo {
+    .office-info { background: url(../images/img_office_01.jpg) left top no-repeat;}
+  }
+  .singapore {
+    margin-left: 40px;
+    .office-info { background: url(../images/img_office_02.jpg) left top no-repeat;}
+  }
+  .hanoi {
+    margin-left: 40px;
+    .office-info { background: url(../images/img_office_03.jpg) left top no-repeat;}
+  }
+  .map {
+    width: 292px;
+    height: 160px;
+    border: 4px solid #d5d5d5;
+    margin-top: 20px;
+  }
+}
+
+.menu {
+  @include css3(transition, 0.1s);
+  @include clearfix;
+  border: 5px solid #ccc;
+  margin-bottom: 20px;
+  width: 970px;
+  text-decoration: none;
+  h1 {
+    font-size: 2.1rem;
+    margin: 20px 0 15px 0;
+    padding-top: 0;
+    width: 440px;
+    padding-left: 180px;
+  }
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 440px;
+    margin: 0;
+    padding-left: 180px;
+  }
+  &:hover {
+    border-color: $red;
+    p {
+      color: #333;
+    }
+  }
+  div {
+    width: 640px;
+    height: 160px;
+    float: left;
+  }
+  figure {
+    background-color: #ddd;
+    width: 320px;
+    height: 160px;
+    padding-left: 10px;
+    float: left;
+  }
+  figcaption {
+    padding: 6px 0;
+  }
+  ul {
+    list-style: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    padding-left: 12px;
+  }
+  li {
+  }
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  .link:hover {
+    color: $red;
+  }
+}
+
+.menu_head {
+  text-align: center;
+  line-height: 42px;
+  color: #333;
+  font-size: 2.4rem;
+}
+.menu-offshore {
+  width: 270px;
+  height: 280px;
+  padding: 150px 15px 15px 15px;
+  margin: 0 25px 0 0;
+  float: left;
+  div {
+    width: 100%;
+    height: auto;
+  }
+  h1, p {
+    width: auto;
+    padding: 0;
+  }
+  p {
+    text-align: left;
+    margin: 10px 0;
+  }
+  .company {
+    text-align: right;
+    font-weight: bold;
+  }
+  h1 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 0;
+  }
+}
+.carousel-prev {
+  position: absolute;
+  display: block;
+  width: 90px;
+  height: 90px;
+  top: 300px;
+  left: -110px;
+  background: url(/jp/images/btn_index_back.png) no-repeat;
+}
+.carousel-prev:hover {
+  background: url(/jp/images/btn_index_back_o.png) no-repeat;
+}
+.carousel-next {
+  position: absolute;
+  display: block;
+  width: 90px;
+  height: 90px;
+  top: 300px;
+  right: -110px;
+  background: url(/jp/images/btn_index_next.png) no-repeat;
+}
+.carousel-next:hover {
+  background: url(/jp/images/btn_index_next_o.png) no-repeat;
+}
+.logoparade {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+  ul {
+    padding: 20px 0;
+    width: 990px;
+    overflow: hidden;
+  }
+  li {
+    float: left;
+    list-style: none;
+    width: 155px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 100px;
+  }
+}
+.piclist {
+  width: 980px;
+  margin: 0 auto;
+  ul {
+    padding: 20px 0;
+    width: 990px;
+    overflow: hidden;
+  }
+  li {
+    line-height: 0;
+    float: left;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+.l-logo, .l-picture {
+  background-color: #fff;
+  padding: 40px 0;
+}
+
+.case_example {
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+.example {
+  float: left;
+  width: 308px;
+  height: 288px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  &:first-child {
+    margin-right: 20px;
+  }
+  &:nth-child(2) {
+    margin-right: 20px;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  p {
+    margin: 0;
+    &.category {
+      text-align: center;
+      background: #ccc;
+      margin: 10px;
+      color: #fff;
+      padding: 3px 0;
+      &.category-web {
+        background-color: #50B6B0;
+      }
+      &.category-app {
+        background-color: #F2734A;
+      }
+      &.category-infra {
+        background-color: #b3bec6;
+      }
+    }
+    &.title {
+      text-align: center;
+      margin: 20px 0 10px 0;
+      line-height: 1.5;
+      font-size: 1.8rem;
+      height: 62px;
+    }
+    &.desc {
+      padding: 20px;
+      font-size: 1.4rem;
+      line-height: 1.8;
+      border-top: 1px dotted #ccc;
+    }
+    &.develop {
+      position: absolute;
+      bottom: 0px;
+      width: 265px;
+      padding: 8px 20px;
+      font-size: 1.2rem;
+      line-height: 1.5;
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+
+
+
+.menu-01 {
+  background: url(../images/img_index_menu_01.png) 2px 2px no-repeat;
+}
+.menu-02 {
+  background: url(../images/img_index_menu_02.png) 2px 2px no-repeat;
+}
+.menu-03 {
+  background: url(../images/img_index_menu_03.png) left top no-repeat;
+}
+.menu-04 {
+  background: url(../images/img_index_poin.jpg) 2px 2px no-repeat;
+}
+.menu-05 {
+  background: url(../images/img_index_comnico.jpg) 2px 2px no-repeat;
+}
+.menu-06 {
+  background: url(../images/img_index_uzabase.jpg) 2px 2px no-repeat;
+}
+.menu-07 {
+  background: url(../images/img_index_poc.jpg) 2px 2px no-repeat;
+}
+#contents {
+  padding: 0;
+}
+
+
+
+
+
+@media screen and (max-width: 979px) {
+}
+@media screen and (max-width: 767px) {
+    /* 767px以下用（タブレット／スマートフォン用）の記述 */
+  #contents {
+    width: 100%;
+    overflow: hidden;
+  }
+  .l-main {
+    width: 100%;
+  }
+  .menu_head {
+    text-align: left;
+    line-height: 1.5;
+    color: #333;
+    font-size: 2.0rem;
+    padding: 0 20px;
+  }
+  .portal {
+    .solution {
+      width: 100%;
+      background-color: #eee;
+      .solution-wrap {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 1px;
+        .btn {
+        }
+      }
+      h2 {
+        //padding: 16px 0 0 130px;
+        font-size: 2.0rem;
+        padding: 0 0 0 25%;
+        height: auto;
+        background-size: contain !important;
+        background-position: 5% top !important;
+        span {
+        }
+      }
+      .solution-consulting {
+        width: 100%;
+        float: none;
+        border-right: none;
+        h2 {
+          color: #3498db;
+          background: url(../images/icon_portal_consulting.png) left top no-repeat;
+          margin-left: 0;
+        }
+        li {
+          width: 136px;
+          margin-right: 24px;
+        } 
+        .btn {
+          margin: 0 20px;
+        }
+      }
+      .solution-offshore {
+        width: 100%;
+        float: none;
+        border-left: none;
+        padding: 0 0 40px 0;
+        h2 {
+          color: #e74d3d;
+          background: url(../images/icon_portal_offshore.png) left top no-repeat;
+          margin-left: 0;
+        }
+        li {
+          width: 100%;
+          margin-left: 0;
+        } 
+        .btn {
+          margin: 0 20px;
+        }
+      }
+      ul {
+        padding: 0 20px;
+      }
+      li {
+        width: 100% !important;
+        float: none;
+        list-style: none;
+        h3 {
+          font-size: 1.6rem;
+          border-bottom: 1px solid #333;
+          width: auto;
+          margin: 0 auto 10px auto;
+          text-align: left;
+          padding-bottom: 5px;
+        }
+        p {
+          font-size: 1.4rem;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+
+  .l-office {
+    background-color: #eee;
+    .office {
+      @include clearfix;
+      width: 100%;
+      margin: 0 auto;
+    }
+    li {
+      width: 100%;
+      box-sizing: border-box;
+      float: none;
+      padding: 0 20px;
+      list-style: none;
+    }
+    h2 {
+      font-size: 1.6rem;
+      margin: 0;
+    }
+    p {
+      font-size: 1.3rem;
+      margin: 10px 0 0 0;
+      line-height: 1.5;
+      text-align: left;
+    }
+    .office-info {
+      padding-left: 140px;
+      height: auto;
+    }
+    .tokyo {
+    }
+    .singapore {
+      margin-top: 40px;
+      margin-left: 0;
+    }
+    .hanoi {
+      margin-top: 40px;
+      margin-left: 0;
+    }
+    .map {
+      width: 100%;
+    }
+  }
+  .logoparade {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    ul {
+      padding: 20px;
+      width: 100%;
+      overflow: hidden;
+    }
+    li {
+      float: left;
+      list-style: none;
+      width: 155px;
+      height: 100px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      text-align: center;
+      line-height: 100px;
+    }
+  }
+
+  .l-news {
+    float: none;
+    width: 100%;
+  }
+  .index {
+    .l-facebook {
+      float: none;
+      width: 100%;
+    }
+    .l-news {
+      float: none;
+      width: 100%;
+    }
+    .l-offshore-stage {
+      position: relative;
+      left: 0px;
+      width: 100%;
+    }
+  }
+
+  .menu-offshore {
+    width: 100%;
+    height: 520px;
+    padding: 150px 0 15px 0;
+    margin: 0 25px 20px 0;
+    float: none;
+    box-sizing: border-box;
+    background-position: left top !important;
+  }
+
+  .menu {
+    border: 5px solid #ccc;
+    margin-bottom: 20px;
+    width: 100%;
+    text-decoration: none;
+    h1 {
+      font-size: 2.1rem;
+      padding: 0;
+      width: 100%;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.5;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    div {
+      width: 100%;
+      height: auto;
+      float: none;
+      padding: 0 20px;
+    }
+    figure {
+      background-color: #ddd;
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+      padding: 0 20px 20px 20px;
+      float: none;
+      box-sizing: border-box;
+    }
+    ul {
+      list-style: none;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      padding-left: 12px;
+    }
+    li {
+    }
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+  }
+
+
+  .menu-01 {
+    background: none;
+  }
+  .menu-02 {
+    background: none;
+  }
+  .menu-03 {
+    background: none;
+  }
+}
+@media screen and (max-width: 479px) {
+  .logoparade {
+    ul {
+    }
+    li {
+      width: 62px;
+      height: 40px;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+  .portal {
+    .l-main {
+      height: 300px;
+      .copy {
+        width: 90%;
+        height: auto;
+        margin-left: -45%;
+      }
+      .slide {
+        height: 300px;
+      }
+    }
+  }
+}

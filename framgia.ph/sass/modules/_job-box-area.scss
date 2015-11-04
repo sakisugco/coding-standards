@@ -1,0 +1,207 @@
+.job-box-area{
+	.area-title{
+		margin: 0 0 61px;
+		@include max-screen( 768px ){
+			margin: 0 0 33px;
+		}
+	}
+	.job-box-content{
+		padding: 90px 0 33px;
+		@include max-screen( 768px ){
+			padding: 90px 0 33px;
+		}
+	}	
+}
+
+.framgia-accordion{
+	.panel-group{
+		margin: 0;
+	}
+	.panel{
+		border-color: #d5d5d5;
+		box-shadow:none;
+		@include bd-rdu(0);
+		&+.panel{
+			margin: 0;
+			border-top: 0;
+		}
+	}
+
+	// Panel heading
+	.panel-heading{
+		border: 0;
+		padding: 0 30px;
+		background: none;
+		@include max-screen( 768px ){
+			padding: 0 15px;
+		}
+		&+.panel-collapse{
+			.panel-body{
+				border: 0;
+				padding: 0 30px;
+				@include max-screen( 768px ){
+					padding: 0 15px;
+				}
+				.inner{
+					border-top: 1px solid #d5d5d5;
+				}
+			}
+		}
+	}
+	.panel-title{
+		font-size:18px;
+		line-height: 31px;
+		color: #232323;
+	    padding: 0;
+		@include lato-bold;
+		@include max-screen( 768px ){
+			font-size:15px;
+			line-height: 20px;
+		}
+		a{
+			padding: 26px 0 21px;
+			display:block;
+			position: relative;
+			@include max-screen( 768px ){
+				padding: 13px 0 11px;
+			}
+			&.collapsed{
+				.b-collapse{
+					.inner{
+						&:before{
+							display: block;
+						}
+						&:after{
+							display: block;
+						}
+					}
+				}
+			}
+		}
+		.tab-title{
+		    display: block;
+			padding-right: 40px;
+		}
+		.b-collapse{
+			position: absolute;
+			float: right;
+			right: 0;
+			top: 31px;
+			@include max-screen( 768px ){
+				top: 16px;
+			}
+			.inner{
+				display: block;
+				width: 20px;
+				height: 20px;
+				position: relative;
+				@include max-screen( 768px ){
+					width: 13px;
+					height: 13px;
+				}
+
+				&:before,&:after{
+					content: '';
+					position:absolute;
+					background: $cl-gray;
+					@include transition(0.3s);
+				}
+
+				&:before{
+					display: block;
+					height: 4px;
+					top: 8px;
+					left: 0;
+					right: 0;
+					@include max-screen( 768px ){
+						top: 5px;
+						height: 3px;
+					}
+				}
+
+				&:after{
+					display: none;
+					height: auto;
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					margin: 0 auto;
+					width: 4px;
+					@include max-screen( 768px ){
+						width: 3px;
+					}
+				}
+			}
+		}
+	}
+
+	// Panel body
+	.panel-body{
+		.entry-item{
+			width: 100%;
+			padding: 25px 15px 28px 0;
+			display: table;
+			background: url(images/fixed/line-accordion.png) repeat-x left bottom;
+			@include max-screen( 600px ){
+				display: block;
+			}
+		}
+		.entry-title{
+			display: table-cell;
+			width: 29.75%;
+			font-size:18px;
+			line-height: 25px;
+			color: $cl-gray;
+
+			@include lato-bold;
+			@include max-screen( 768px ){
+				font-size:15px;
+				line-height: 20px;
+			}
+			@include max-screen( 600px ){
+				display: block;
+				width: 100%;
+				margin: 0 0 15px;
+			}
+		}
+		.details{
+			font-size:16px;
+			line-height: 25px;
+			color: $cl-gray;
+			@include lato;
+		}
+	}
+
+	// Panel footer
+	.panel-footer{
+		text-align: center;
+		padding: 30px 0 36px;
+		background: none;
+		@include max-screen( 768px ){
+			padding: 20px 0;
+		}
+		a{
+			font-size:18px;
+			padding: 14px 28px;
+			letter-spacing: 2.5px;
+			color: $cl-white;
+			background: #c63b32;
+			box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+			-webkit-box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+			-moz-box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+			-ms-box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+			@include uppercase;
+			@include lato;
+			@include a-hover;
+			@include max-screen( 768px ){
+				    font-size: 13px;
+				    line-height: 18px;
+				    padding: 13px 18px;
+			}
+		}
+	}
+
+}
+
+

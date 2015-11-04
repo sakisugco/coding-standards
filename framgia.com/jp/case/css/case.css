@@ -1,0 +1,566 @@
+@charset "UTF-8";
+.mod-center-1, .l-case, .l-overview > h1, .l-overview-bse > h1, .l-overview .l-profile, .l-overview-bse .l-profile, .l-overview-uzabase > h1, .l-overview-uzabase .l-wrap {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-2 {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-3, .l-overview-bse .l-textBody h1 {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-4, .l-overview .l-textBody p, .l-overview-bse .l-textBody p {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 979px) {
+  .mod-center-1, .l-case, .l-overview > h1, .l-overview-bse > h1, .l-overview .l-profile, .l-overview-bse .l-profile, .l-overview-uzabase > h1, .l-overview-uzabase .l-wrap {
+    width: 980px;
+    padding: 0 20px;
+    box-sizing: border-box; }
+
+  .mod-center-2 {
+    width: 900px;
+    box-sizing: border-box; }
+
+  .mod-center-3, .l-overview-bse .l-textBody h1 {
+    width: 980px;
+    box-sizing: border-box; }
+
+  .mod-center-4, .l-overview .l-textBody p, .l-overview-bse .l-textBody p {
+    width: 980px;
+    box-sizing: border-box; } }
+@media screen and (max-width: 767px) {
+  .mod-center-1, .l-case, .l-overview > h1, .l-overview-bse > h1, .l-overview .l-profile, .l-overview-bse .l-profile, .l-overview-uzabase > h1, .l-overview-uzabase .l-wrap {
+    width: 100%; }
+
+  .mod-center-2 {
+    width: 100%; }
+
+  .mod-center-3, .l-overview-bse .l-textBody h1 {
+    width: 100%; }
+
+  .mod-center-4, .l-overview .l-textBody p, .l-overview-bse .l-textBody p {
+    width: 100%; } }
+h1 {
+  padding-top: 0; }
+
+.l-case {
+  margin-top: 30px; }
+  .l-case h1 {
+    line-height: 1.6; }
+
+.l-profile {
+  margin-top: 20px;
+  padding: 20px; }
+
+.l-profile2 {
+  padding: 10px 10px 10px 20px;
+  background-color: #fff;
+  height: 155px;
+  line-height: 1.5; }
+
+.l-profile-cakes .pBody {
+  background: url(../images/cakes/img_01.jpg) right top no-repeat #fff;
+  height: 155px;
+  padding-right: 350px; }
+
+.l-profile-company {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd; }
+  .l-profile-company .pBody {
+    padding-right: 350px; }
+    .l-profile-company .pBody p {
+      font-size: 14px;
+      line-height: 1.8; }
+
+.l-profile-uzabase {
+  height: 155px; }
+  .l-profile-uzabase .pBody {
+    background: url(../images/uzabase/img_01.jpg) right top no-repeat #fff; }
+
+.l-profile-basic {
+  height: 125px; }
+  .l-profile-basic .pBody {
+    background: url(../images/basic/basicinc-logo.png) 700px 35px no-repeat #fff;
+    font-size: 14px;
+    padding-right: 350px; }
+
+.l-profile-tsumiki {
+  height: 174px; }
+  .l-profile-tsumiki .pBody {
+    height: 174px;
+    background: url(../images/tsumiki/tsumiki-logo.jpg) 620px 0px no-repeat #fff;
+    font-size: 14px;
+    padding-right: 350px; }
+
+.l-profile-2 {
+  zoom: 1;
+  position: relative; }
+  .l-profile-2:before, .l-profile-2:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .l-profile-2:after {
+    clear: both; }
+  .l-profile-2 p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6; }
+  .l-profile-2 .pPhoto {
+    position: absolute;
+    left: 0px; }
+  .l-profile-2 .pName {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 2;
+    font-weight: bold;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; }
+  .l-profile-2 .pPos {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; }
+  .l-profile-2 .l-profile-2-inner {
+    margin-top: 30px;
+    padding-left: 220px;
+    min-height: 190px; }
+
+.mainVisual {
+  position: relative; }
+  .mainVisual h1 {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 14px;
+    bottom: 18px;
+    height: auto;
+    color: #fff;
+    font-size: 18px;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+    font-weight: normal !important;
+    text-shadow: none;
+    line-height: 1.5; }
+    .mainVisual h1 strong {
+      display: inline-block;
+      font-size: 28px;
+      line-height: 1;
+      padding: 6px 0 10px 0; }
+
+.title {
+  margin: 20px 0; }
+
+.lead {
+  margin: 0; }
+
+.interview h1 {
+  color: #333;
+  font-size: 24px;
+  line-height: 1.6;
+  padding-left: 48px;
+  width: 100%;
+  background: url(../images/bg_interview.png) left 18px no-repeat; }
+.interview h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #e74c3c;
+  width: 100%; }
+
+.l-wrap {
+  zoom: 1; }
+  .l-wrap:before, .l-wrap:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .l-wrap:after {
+    clear: both; }
+  .l-wrap p {
+    width: 580px; }
+
+.l-text {
+  float: left;
+  width: 570px; }
+  .l-text h2 {
+    padding-left: 40px; }
+  .l-text p {
+    padding-left: 40px;
+    width: 100%; }
+
+.l-image {
+  float: right;
+  width: 308px;
+  padding-top: 60px;
+  text-align: center; }
+  .l-image p {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    padding: 0;
+    text-align: left; }
+  .l-image .caption {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 0 30px 0;
+    display: inline-block; }
+  .l-image > p {
+    margin-top: 0; }
+
+.l-image-isolated {
+  margin: 40px 0; }
+  .l-image-isolated p {
+    margin: 0; }
+    .l-image-isolated p.caption {
+      font-size: 12px; }
+
+.l-profile-right {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 9px; }
+  .l-profile-right p {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.6; }
+  .l-profile-right .pName {
+    font-size: 16px;
+    line-height: 2;
+    font-weight: bold;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; }
+  .l-profile-right .pPos {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: '游明朝', YuMincho,'Hiragino Mincho Pro','Hiragino Mincho ProN','ヒラギノ明朝 Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック','MS PGothic'; }
+
+.l-overview, .l-overview-bse {
+  padding: 40px 0;
+  background-color: #eee; }
+  .l-overview > h1, .l-overview-bse > h1 {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .l-overview .pName, .l-overview-bse .pName {
+    margin-top: 30px; }
+  .l-overview .l-profile, .l-overview-bse .l-profile {
+    padding: 20px 0 40px 0;
+    border-bottom: 1px solid #ccc; }
+  .l-overview .l-textBody, .l-overview-bse .l-textBody {
+    margin-top: 60px; }
+
+.pPhoto img {
+  border-radius: 230px; }
+
+.pCaption {
+  width: 230px !important;
+  text-align: center !important;
+  font-size: 12px; }
+
+.l-overview-bse {
+  background-color: #f8f8f8; }
+  .l-overview-bse .l-textBody h1 {
+    font-size: 18px;
+    color: #333;
+    margin: 40px auto 15px auto; }
+  .l-overview-bse .l-profile {
+    background-color: #f8f8f8; }
+
+.l-overview-uzabase {
+  zoom: 1;
+  padding: 40px 0;
+  background-color: #eee;
+  background-color: #eee; }
+  .l-overview-uzabase:before, .l-overview-uzabase:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .l-overview-uzabase:after {
+    clear: both; }
+  .l-overview-uzabase > h1 {
+    margin-top: 0;
+    margin-bottom: 0; }
+  .l-overview-uzabase h2 {
+    font-size: 16px;
+    font-weight: bold; }
+  .l-overview-uzabase .l-wrap {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #fff; }
+  .l-overview-uzabase .l-wrap-top {
+    border-top: none; }
+  .l-overview-uzabase .l-wrap-bottom {
+    border-bottom: none; }
+  .l-overview-uzabase .l-text {
+    float: left;
+    width: 580px; }
+  .l-overview-uzabase .l-image {
+    float: right;
+    width: 309px;
+    padding-top: 50px; }
+  .l-overview-uzabase .name {
+    text-align: right;
+    font-weight: bold; }
+
+.l-inquiry {
+  margin-top: 80px; }
+
+.pagination {
+  width: 600px;
+  overflow: hidden;
+  margin-top: 60px; }
+  .pagination div, .pagination li {
+    width: 34px;
+    height: 34px;
+    line-height: 32px;
+    list-style: none;
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    background-color: #fff; }
+  .pagination .preview {
+    margin: 0 16px 0 0; }
+  .pagination .next {
+    float: right;
+    margin: 0; }
+  .pagination a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    border: 1px solid #999; }
+    .pagination a:hover {
+      background-color: #e74c3c;
+      border: 1px solid #e74c3c;
+      color: #fff; }
+  .pagination .is-selected {
+    background-color: #e74c3c;
+    border: 1px solid #e74c3c;
+    color: #fff;
+    cursor: default; }
+  .pagination span {
+    display: block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #999;
+    background-color: #eee;
+    color: #999; }
+
+.nextpage {
+  margin: 20px 0 0 40px; }
+  .nextpage span {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 14px;
+    padding: 2px 10px 0 15px;
+    margin-right: 30px;
+    position: relative; }
+    .nextpage span:after {
+      position: absolute;
+      content: '';
+      top: 0px;
+      right: -30px;
+      width: 0px;
+      height: 0px;
+      border: 15px solid transparent;
+      border-left-color: #e74c3c; }
+  .nextpage a {
+    text-decoration: none;
+    color: #e74c3c; }
+    .nextpage a:hover {
+      text-decoration: underline; }
+
+@media screen and (max-width: 767px) {
+  .mainVisual img {
+    width: 100%;
+    height: auto; }
+  .mainVisual h1 {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0px;
+    bottom: 0px;
+    height: auto;
+    color: #333;
+    font-size: 1.8rem;
+    text-shadow: none;
+    line-height: 1.5; }
+    .mainVisual h1 strong {
+      display: inline-block;
+      font-size: 1.8rem;
+      line-height: 1.5;
+      padding: 6px 0 10px 0; }
+
+  .interview h1 {
+    padding-left: 0;
+    text-indent: 48px;
+    font-size: 2.0rem; }
+
+  .l-wrap p {
+    width: 100%; }
+
+  .l-text {
+    float: none;
+    width: 100%; }
+    .l-text h2 {
+      padding-left: 0; }
+    .l-text p {
+      padding-left: 0;
+      width: 100%; }
+
+  .l-image {
+    float: none;
+    width: 100%; }
+    .l-image img {
+      width: 100%;
+      height: auto; }
+
+  .l-image-isolated {
+    margin: 40px 0; }
+    .l-image-isolated img {
+      width: 100%;
+      height: auto; }
+
+  .l-profile .pPhoto {
+    float: none;
+    margin: 0; }
+    .l-profile .pPhoto img {
+      width: 100%;
+      height: auto; }
+  .l-profile .pName {
+    text-align: left;
+    font-size: 2.2rem; }
+
+  .l-overview, .l-overview-bse {
+    padding: 40px 20px; }
+
+  .l-overview-bse {
+    padding: 40px 20px; }
+
+  .l-overview-uzabase .l-text {
+    float: none;
+    width: 100%; }
+  .l-overview-uzabase .l-image {
+    float: none;
+    width: 100%; }
+
+  .l-profile-uzabase .pBody {
+    background: none;
+    height: auto;
+    padding-right: 0; }
+    .l-profile-uzabase .pBody p {
+      line-height: 1.5; }
+
+  .l-profile-cakes .pBody {
+    background: none;
+    height: auto;
+    padding-right: 0; }
+    .l-profile-cakes .pBody p {
+      line-height: 1.5; }
+
+  .l-profile-company {
+    height: auto; }
+    .l-profile-company .pBody {
+      padding: 0; }
+
+  .l-profile-2 .pPhoto {
+    position: relative; }
+  .l-profile-2 .l-profile-2-inner {
+    padding-left: 0; }
+
+  .l-uzabase .l-profile2 {
+    height: auto; }
+
+  .pagination {
+    width: 100%; }
+    .pagination div, .pagination li {
+      width: 24px;
+      height: 24px;
+      line-height: 22px;
+      margin-right: 5px; }
+    .pagination .preview {
+      margin: 0 5px 0 0; }
+    .pagination .next {
+      float: right;
+      margin: 0; }
+    .pagination a {
+      display: block;
+      width: 22px;
+      height: 22px;
+      line-height: 22px; }
+      .pagination a:hover {
+        background-color: #e74c3c;
+        border: 1px solid #e74c3c;
+        color: #fff; }
+    .pagination span {
+      width: 22px;
+      height: 22px;
+      line-height: 22px; }
+
+  .nextpage {
+    margin-left: 0; }
+
+  .l-tsumiki .interview h1,
+  .l-basic .interview h1 {
+    padding: 0;
+    text-indent: 0px; } }
+.l-basic .mainVisual
+h1 {
+  color: #333;
+  font-size: 14px;
+  line-height: 1.5; }
+  .l-basic .mainVisual
+  h1 strong {
+    display: inline-block;
+    font-size: 28px;
+    line-height: 1;
+    padding: 6px 0 10px 0; }
+
+.l-tsumiki .mainVisual h1 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5; }
+  .l-tsumiki .mainVisual h1 strong {
+    font-weight: normal;
+    display: inline-block;
+    font-size: 28px;
+    line-height: 1;
+    padding: 6px 0 10px 0; }
+.l-tsumiki .l-text h2 {
+  padding-left: 0; }
+.l-tsumiki .l-text p {
+  padding-left: 0;
+  width: 100%; }
+
+.l-tsumiki .interview h1,
+.l-basic .interview h1 {
+  color: #333;
+  font-size: 21px;
+  line-height: 1.6;
+  width: 100%;
+  padding: 0;
+  background: none; }
+.l-tsumiki .interview h2,
+.l-basic .interview h2 {
+  box-sizing: border-box;
+  margin-top: 0;
+  font-size: 16px;
+  width: 100%;
+  padding-left: 24px;
+  background: url(../images/bg_interview_02.png) left 12px no-repeat; }
+.l-tsumiki .interview p,
+.l-basic .interview p {
+  padding: 0; }

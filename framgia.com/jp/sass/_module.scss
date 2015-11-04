@@ -1,0 +1,149 @@
+@import "setup", "mixin-module", "extend-module";
+
+/**
+ * Module Rules
+ */
+
+
+
+/* Navigation Module */
+.gNav {
+  @include clearfix;
+  ul {
+  }
+  li > a {
+    @include css3(transition, 0.1s);
+    text-decoration: none;
+    display: block;
+    line-height: 1;
+    &:hover {
+      color: #fff;
+      background-color: $red;
+    }
+  }
+  .l-stacked a:hover {
+      color: $red;
+      background-color: #eee;
+  }
+}
+
+
+.fb-wrap, .fb-like, .fb-share, .twitter-share, .hatena, .gplus-wrap {
+  display: inline-block;
+  overflow: hidden;
+  height: 22px;
+}
+.fb-like, .fb-share {
+  padding-right: 10px;
+}
+.twitter-share {
+  width: 95px;
+}
+.hatena {
+  width: 55px;
+}
+.gplus-wrap {
+  width: 70px;
+}
+.news {
+  @include clearfix;
+  & > dt {
+    width: 108px;
+    float: left;
+  }
+  & > dd {
+    float: left;
+    width: 472px;
+    margin: 0 0 10px 0;
+  }
+  a {
+  @include css3(transition, 0.1s);
+    text-decoration: underline;
+    &:hover {
+      color: $red;
+    }
+  }
+}
+.link {
+  @include css3(transition, 0.1s);
+  padding-left: 17px;
+  background: url(../images/icon_arrow_02.png) left center no-repeat;
+  text-decoration: none;
+  line-height: 1;
+    &:hover {
+      background-position: 3px center;
+    }
+}
+.vision {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.lead {
+  margin-top: 40px;
+}
+.pName {
+  font-size: 28px;
+  line-height: 1.3;
+  margin: 0;
+}
+.pDesc {
+  font-size: 14px;
+}
+.pPos {
+  font-size: 20px;
+  line-height: 1.3;
+  margin: 0 0 15px 0;
+}
+.photo {
+  border-radius: 230px;
+}
+.note {
+  font-size: 83%;
+  line-height: 1.5;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+p + p.note {
+  margin-top: -20px;
+}
+
+/* Button Module */
+.btn {
+  @include round-btn(142px, 36px, $blue);
+  @include css3(transition, 0.1s);
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+    background-color: #205c85;
+  }
+}
+.pageTop {
+  @include css3(transition, 0.1s);
+  display: block;
+  position: fixed;
+  bottom: -40px;
+  right: 40px;
+  width: 40px;
+  height: 0px;
+  padding-top: 40px;
+  opacity: 0.3;
+  overflow: hidden;
+  border-radius: 2px 2px 0 0;
+  background: url(../images/icon_pagetop.png);
+  z-index: 1000;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+/* layout */
+.fltRight {
+  float: right;
+}
+.txtAlgnR {
+  text-align: right;
+}

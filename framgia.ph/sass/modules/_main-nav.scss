@@ -1,0 +1,96 @@
+.main-nav-box{
+	float: right;
+	@include max-screen( 767px ){
+		float: none;
+	}
+	.navbar-default{
+		border: 0;
+		background: none;
+	}
+}
+
+.navbar-default.main-nav{
+	margin: 0;
+	.navbar-toggle{
+		border-color: $cl-black;
+		margin: 18px 0;
+		@include bd-rdu(0px);
+		span{
+			background: $cl-black;
+		}
+		&:focus,&:hover{
+			background: none;
+		}
+	}
+
+	.navbar-nav{
+		@include max-screen( 767px ){
+			margin-bottom: 23px;
+		}
+		li{
+			padding:0;
+			margin: 0 8px;
+			
+			@include transition(0.3s);
+			@include max-screen( 830px ){
+				margin: 0;
+			}
+			@include max-screen( 767px ){
+				border: 0;
+			}
+
+			
+			&.contact-btn{
+				padding: 15px 0 11px 16px;
+				@include max-screen( 767px ){
+					padding: 0;
+					border: 0;
+				}
+				border-color: transparent;
+				a{
+					padding: 11px 10px;
+					letter-spacing: 2.5px;
+					color: $cl-white;
+					background: #c63b32;
+					box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+					-webkit-box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+					-moz-box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+					-ms-box-shadow: 0.5px 0.866px 5px 0px rgba(0, 0, 0, 0.23);
+					border: 0;
+					@include a-hover;
+					&.current{
+						@include max-screen( 767px ){
+							color: $cl-white;
+						}
+					}
+					@include max-screen( 767px ){
+						&:hover{
+							color: $cl-white;
+						}
+					}
+				}
+			}
+			a{
+				font-size:14px;
+				line-height: 18px;
+				color: #111c2a;
+				padding: 26px 10px 22px;
+				border-bottom: 4px solid transparent;
+				@include lato-bold;
+				@include uppercase;
+				&.current,&:hover{
+					border-color: #c63b32;
+					@include max-screen( 767px ){
+						color: #c63b32;
+
+					}
+				}
+				@include max-screen( 767px ){
+					padding: 11px 10px;
+					border: 0;
+				}
+			}
+		}
+	}
+}
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>オフショア開発インタビュー ｜ピースオブケイクが切り開くコンテンツの未来｜「書籍の再発明」を目指すnote （3/7）フランジア</title>
+  <meta name="description" content="ピースオブケイクのCEO加藤 貞顕氏、CTOの原永 淳氏に、会社の成り立ちやデジタルコンテンツプラットフォームのcakes、noteに対する想い、オフショア開発に関するインタビュー。「書籍の再発明」を目指すnoteについて詳しく伺いました。">
+  <meta name="keywords" content="デジタルコンテンツ, オフショア開発, システム開発, クリエーター, 加藤貞顕, 原永淳, note, くるり, 津田大介,平野啓一郎,フランジア">
+  <meta name="viewport" content="width=device-width">
+  <meta property="og:title" content="オフショア開発インタビュー ｜ピースオブケイクが切り開くコンテンツの未来｜「書籍の再発明」を目指すnote （3/7）">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://framgia.com/jp/case/poc_03.html">
+  <meta property="og:image" content="http://framgia.com/jp/case/images/cakes/og.jpg">
+  <meta property="og:description" content="ピースオブケイクのCEO加藤 貞顕氏、CTOの原永 淳氏に、会社の成り立ちやデジタルコンテンツプラットフォームのcakes、noteに対する想い、オフショア開発に関するインタビュー。「書籍の再発明」を目指すnoteについて詳しく伺いました。">
+  <meta property="og:site_name" content="フランジア">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="./css/case.css">
+  <!--[if lt IE 9]>
+  <script src="/jp/js/lib/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<!-- common header -->
+<?php include '../include/header.php' ?>
+<!--/common header -->
+
+  <section>
+    <div id="contents" class="l-uzabase">
+      <div class="l-main">
+        <h1>開発事例インタビュー</h1>
+      </div>
+
+      <div class="l-case">
+
+        <div class="mainVisual">
+          <h1>
+            デジタルコンテンツ業界の注目起業がオフショア開発を選んだ理由とは？<br>
+            <strong>ピースオブケイクが切り開くコンテンツの未来</strong><br>
+            株式会社ピースオブケイク・CEO加藤氏、CTO原永氏インタビュー
+          </h1>
+          <img src="./images/cakes/mainImg.jpg" alt="" width="980" height="368">
+        </div>
+
+        <!-- Social Buttons -->
+        <?php 
+          $page_title = 'オフショア開発インタビュー ｜「書籍の再発明」を目指すnote ｜株式会社ピースオブケイク（3/7）';
+          include '../include/social.php';
+        ?>
+        <!-- /Social Buttons -->
+
+   <span style="color: #999999">オフショア開発インタビュー > 株式会社ピースオブケイク</span> > 「書籍の再発明」を目指すnote
+
+        <div class="pagination">
+          <div class="preview"><a href="#">&lt;</a></div>
+          <ul>
+            <li><a title="起業の理由、CEOとCTOの出会い" href="./poc.html">1</a></li>
+            <li><a title="「雑誌の再発明」を目指すcakes" href="./poc_02.html">2</a></li>
+            <li><a title="「書籍の再発明」を目指すnote" href="./poc_03.html">3</a></li>
+            <li><a title="インターネットに多様性のあるコンテンツを生み出す" href="./poc_04.html">4</a></li>
+            <li><a title="オフショア開発のきっかけと目的" href="./poc_05.html">5</a></li>
+            <li><a title="ピースオブケイク流 オフショア開発" href="./poc_06.html">6</a></li>
+            <li><a title="開発を振り返って（フランジア）" href="./poc_07.html">7</a></li>
+          </ul>
+          <div class="next"><a href="#">&gt;</a></div>
+        </div>
+
+        <section class="interview">
+          <div class="l-wrap">
+            <div class="l-text">
+              <h1>noteの特徴について教えてください。</h1>
+                <h2>cakesが「雑誌の再発明」だとしたら、noteは「本の再発明」</h2>
+                <p><strong>加藤：</strong>noteもcakesも最終的にやろうとしていることは実はいっしょなんです。cakesが雑誌のようにコンテンツやクリエイターの集合をまとまりで見せているのに対して、noteはそれをバラバラにしてクリエイターごとに見せています。cakesが「雑誌の再発明」だとしたら、noteは「本の再発明」。要するに個人メディアなんですよね。最終的にはnoteは個人メディアと思われなくなるんですが、まずスタートラインはそこかと思っています。</p>
+                <p>noteはTwitterと同じようにURLに自分のIDがあって、それ込みで自分のトップページがあります。紙のメディアにおいては、「雑誌と書籍」が非常に基本的な組み合わせで、ネットにおいてもそういう新しい組み合わせが必要だと思っていました。しかし、ネットには個人メディアにあたるものがなかった。</p>
+
+              <h1>noteがこれまでにない個人メディアとして解決しようとしていることは何ですか？</h1>
+                <p><strong>加藤：</strong>紙の本と違い、電子書籍の解決すべき課題は３つあります。① 先ほどのマーケティングの問題（プラットフォームにマーケティング情報を握られていて、手出しできない）、② デジタルなのにインタラクティブじゃないこと、③ オープンでなく閉じていること。この３つの課題を解決させようとして作ったものがnote です。個人メディアでオープンでインタラクティブ、ビジネスもできて、クリエイターのファンとつながることができる、という場所を考えるとこうなるかな、という思いで作っています。</p>
+       </div>
+            <div class="l-image">
+              <p><img src="./images/cakes/note.png" alt="" width="307" height="174"></p>
+              <p class="caption">2014年の4月にローンチ。アーティスト、作家、漫画家など、プロ・アマ問わず既に多くのクリエイターが使っている。今後こういう場所で収入を得て「ご飯を食べていく」クリエイターを増やしたい、という想いで運営している。</p>
+            </div>
+          </div>
+        </section>
+
+
+        <section class="interview">
+          <div class="l-wrap">
+            <div class="l-text">
+
+              <h1>「雑誌の再発明」のcakesと「本の再発明」のnoteは、どのようにつながっていくのでしょうか？</h1>
+                <h2>noteが目指していることは、オープンなcakes</h2>
+                <p><strong>加藤：</strong>noteには「マガジン」というコンテンツを束ねる機能がつきました。これはコンテンツの未来を広げられる仕組みなのではと思っています。要するに、「小さなメディアをつくる」機能なんですよね。めちゃくちゃ簡単にメディアが作れてしまう。テキストを束ねれば本になるし、音楽を束ねて売ればアルバムにもなります。読者はフォローできるので、月ごとに出せば雑誌にもなるし、継続課金にしたらファンクラブになります。そのうち、クラウドファンディングの機能も取り入れようと考えています。</p>
+                <p>最終的には、ここでコラボレーションのマガジンが立ち上げられるようにしたいなと思っていて、複数の人でこのメディアを運営することができるようにして、売れたらお金を分配できるような仕組みにしていく予定です。これってcakesでやってることなんですよね。要するに、noteが目指ししていることは、オープンなcakesなんですよ。そうすると最後、山の両側からトンネルを掘り進むような感じで、ど真ん中でひとつになるのかなと思っています。</p>
+
+           </div>
+
+            <div class="l-image">
+              <span class="center"><a href="https://note.mu/sahoobb/m/m6d7f0f032e74" target="_blank"><img src="./images/cakes/note_okazaki.jpg" alt="" width="246" height="330"></a></span>
+              <p class="caption">noteのマガジンを活用した作品。話題の漫画家、山本さほさんによる「<a href="https://note.mu/sahoobb/m/m6d7f0f032e74" target="_blank">岡崎に捧ぐ</a>」。ソーシャルメディアを中心に絶賛されている漫画。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="interview">
+          <div class="l-wrap">
+            <div class="l-text">
+              <h1>始まってまだ数ヶ月ですが、やってみて発見したことや印象に残っていることをお聞かせください。</h1>
+                <h2>プロの参入が多くあったことに驚き</h2>
+                <p><strong>加藤：</strong>まず最初の予想とぜんぜん違っていたのは、ミュージシャンの方からの利用と問い合わせが増えていることですね。僕らは出版の目線で始めているんですけど、開発の過程で、テキストと画像があるなら音をやらない理由はないな、ということで音も付けました。</p>
+                <p>あとミュージシャンに限らず、作家とか漫画家さんとかプロの参入が多くあったのも驚きました。cakes の時は、依頼してまわるんですけど、それをみなさんがどんどん勝手にはじめてくださっています。そうしようと思ってやってきたんですけど、予想以上にやってくださっているというのが、最初びっくりしたことでもありますね。ありがたい話です。</p>
+            </div>
+
+            <div class="l-image">
+              <p><a href="https://note.mu/takano_hiroshi" target="_blank"><img src="./images/cakes/note_takano.jpg" alt="" width="307" height="351"></a><p>
+              <p class="caption">ミュージシャンの<a href="https://note.mu/takano_hiroshi" target="_blank">高野寛さんによるnote</a>。未発表のレア音源やフォトエッセイを発表している。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="interview">
+          <div class="l-wrap">
+            <div class="l-text">
+              <h1>ミュージシャンでは、くるりが所属事務所から独立をして、今後ファンクラブの運営をnoteを中心にやっていくと発表され話題になっていましたね。
+</h1>
+                <p><strong>加藤：</strong>実は僕と同じ歳で付き合い長い津田大介くんから、noteをリリースした日の夜12時過ぎくらいに携帯に電話がきて、「これミュージシャンも使えるのかな？」と聞かれたんですね。「使えるっていうか、そのためにあるようなサービスなんだよね」と話をしたら、「今ね、くるりの岸田くんと飲んでいて、今度独立する予定でファンクラブとかどうしようかと思っていたところで、今度紹介してもいい？」と言われたんです。その後、数日以内くらいに会って、やりましょう！という話になりました。津田さんの紹介がきっかけです。</p>
+
+              <h1>今後もこのような例を増やしていきたいとお考えですか？</h1>
+                <h2>大きな広がりのあるストーリーをファンと共有できる場</h2>
+                <p><strong>加藤：</strong>ネットでファンとコミュニケーションしていくことになると、たぶん今までとやり方が色々変わってくるんじゃないかと思うんですよね。音楽の話で言うと、今まではCDというガチガチに作りこんだ、Photoshopでたくさんお化粧を重ねたような写真ってあるじゃないですか、そういうものですよね、CDの音楽っていうのは。それとライブ。この二者択一だったんですよね。</p>
+                <p>しかし、その間にも音楽っていっぱいあるんですよ。まず詩をどんな想いで書いたのかという話もあるし、あと音もね、一番最初ってiPhoneで録音したりするわけですよ。そのファーストの音だったり、あるいは、バンドがはじめてスタジオに入って録音したもの、あるいは、すでに売ってる楽曲をうちでリラックスしながらフォークギター１本で歌いながら弾いたものなど、実はいろんな音があるんですね。それをファンに伝えるというのは、ものすごく価値があると思うんですよ。今まではメディアの特性で、CDならこう、ライブでやるならこう、という大きい枠しかなかく、それはそのままでいいんですけど、それ以外の部分にも、大きな広がりのあるストーリーがあり、それらを共有することは、ミュージシャンにとってもファンにとってもいいことなんじゃないかって思っているです。</p>
+            </div>
+
+            <div class="l-image">
+              <p><a href="https://note.mu/quruli" target="_blank"><img src="./images/cakes/note_quruli.jpg" alt="" width="307" height="351"></a></p>
+              <p class="caption">ロックバンド、<a href="https://note.mu/quruli" target="_blank">くるりのnote</a>。noteを利用してファンクラブの運営を開始。メンバーによる日記やツアーのレポート、未発表曲の公開なども行っている。</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="interview">
+          <div class="l-wrap">
+            <div class="l-text">
+
+              <h1>音楽以外でも？</h1>
+                <h2>今までなかった読者との関係性が生まれる</h2>
+                <p><strong>加藤：</strong>これは音楽に限ったことではなく、今度、芥川賞作家の平野啓一郎さんがnoteを始めてくださるのですが、朗読を載せようかなとかおっしゃっていて、作家自身が自作を朗読するってかなり価値があることだと思います。どこをどう大事にして読むのかを聴けるのは相当面白いんですよね。また、平野さんは三島由紀夫の影響を受けた方なんですけど、彼が三島由紀夫を朗読するなんていうのも面白いはず。全部は朗読できないので、大好きなシーンを選ぶことになりますが、それ自体がキュレーションになってくるわけです。そういうメディアのコミュニケーション、読者との関係性って今までなかったし、できなかったんですよね。これができるようになるっていうのは、意味のあることだと思うんですよね。</p>
+              <h1>プロ・アマチュア問わずいろんな方がnoteを使っていますが、クリエイターの定義はどのようにお考えですか？</h1>
+                <p><strong>加藤：</strong>インターネットの時代というのは綺麗ごとではなく、全員がクリエイターだと思うんですよね。人気とか面白さとかいろんな差があるんですけど。
+</p>
+
+              <h1>アマチュアでも売れるコンテンツは作れますか？</h1>
+                <p><strong>加藤：</strong>noteには、「ここで何を売っていいのかわからない」という人が結構いるんです。別に売らなくてもいいと思うんですけど、全員が売れるコンテンツを１個はできると思っています。みんなね、今までで一番自分が恥ずかしかった話を書けばいいと思うんですよ。これは絶対売れるはずです。「書けないレベル」のやつじゃないとダメですよ。</p>
+
+         <div class="l-image-isolated">
+                <p><img src="./images/cakes/kato.jpg" alt="" width="570" height="379"></p>
+                <p class="caption">「インターネットの時代というのは綺麗ごとではなく、全員がクリエイターだと思うんですよね。」</p>
+              </div>
+
+                <p>でも、プロのクリエイターっていうのはそういうことをしているんですよね。売るということはクリエイティビティを引き出す意味合いもあって、プロは商売だから仕方なく、すごく恥ずかしかった話とか、自分の中の醜い心に踏み込んで唸りながら毎日書いて出してるわけですよ。自分の根本のところに踏み込んでやる、クリエイティブワークってそういうものだと思うんですよね。</p>
+
+            </div>
+            <div class="l-image">
+              <p><a href="https://note.mu/hiranok" target="_blank"><img src="./images/cakes/note_hirano.jpg" alt="" width="307" height="330"></a></p>
+              <p class="caption">芥川賞作家の<a href="https://note.mu/hiranok" target="_blank">平野啓一郎さんのnote</a>。自身の作品や芥川龍之介の作品を朗読したコンテンツを公開している。</p>
+            </div>
+
+          </div>
+        </section>
+
+        <p class="nextpage"><a href="./poc_04.html"><span>次ページ</span>インターネットに多様性のあるコンテンツを生み出す</a></p>
+
+        <div class="pagination">
+          <div class="preview"><a href="#">&lt;</a></div>
+          <ul>
+            <li><a title="起業の理由、CEOとCTOの出会い" href="./poc.html">1</a></li>
+            <li><a title="「雑誌の再発明」を目指すcakes" href="./poc_02.html">2</a></li>
+            <li><a title="「書籍の再発明」を目指すnote" href="./poc_03.html">3</a></li>
+            <li><a title="インターネットに多様性のあるコンテンツを生み出す" href="./poc_04.html">4</a></li>
+            <li><a title="オフショア開発のきっかけと目的" href="./poc_05.html">5</a></li>
+            <li><a title="ピースオブケイク流 オフショア開発" href="./poc_06.html">6</a></li>
+            <li><a title="開発を振り返って（フランジア）" href="./poc_07.html">7</a></li>
+          </ul>
+          <div class="next"><a href="#">&gt;</a></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <div class="l-inquiry">
+    <p>ベトナムのオフショア開発の視察、システム開発に関するご質問、<br>
+      お仕事のご相談、お見積の依頼など、お気軽にお問い合わせください。</p>
+    <a href="/jp/contact.html" class="btn">お問い合わせ</a>
+  </div>
+
+
+
+  <!-- Social Buttons -->
+  <?php include '../include/social.php' ?>
+  <!-- /Social Buttons -->
+
+  <a href="#" class="pageTop">Page Top</a>
+
+<!-- common footer -->
+<?php include '../include/footer.php' ?>
+<!--/common footer -->
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="/common/js/lib/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="/jp/js/common.js"></script>
+  <script src="/jp/js/case.js"></script>
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X');ga('send','pageview');
+  </script>
+</body>
+</html>

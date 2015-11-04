@@ -1,0 +1,151 @@
+.work-box-area{
+	.work-box-content{
+		padding: 90px 0 27px;
+		@include max-screen( 768px ){
+			padding: 90px 0 32px;
+		}
+		.area-title{
+			margin: 0 0 71px;
+			@include max-screen( 768px ){
+				margin: 0 0 33px;
+			}
+		}
+	}
+	.wrap-entry-item{
+		@include min-screen( 993px ){
+			display: table;
+		}
+		>.rm-pd{
+			
+			float: none;
+			vertical-align: top;
+			border-top: 1px solid #d5d5d5;
+			border-bottom: 1px solid #d5d5d5;
+			@include min-screen( 993px ){
+				display: table-cell;
+			}
+
+			&.rm-bd{
+				border: 0;
+			}
+			&.col-small{
+				background: url(images/men-1.jpg) center no-repeat;
+				background-size: cover;
+				height: 600px;
+				@include transition(0.3s);
+				@include min-screen( 1200px ){
+					width: 31.25%;
+				}
+				@include max-screen( 530px){
+					height: 400px;
+				}
+			}
+			&.col-big{
+				position: relative;
+				&:before{
+					content:'';
+					position: absolute;
+					width: 1px;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					margin: 0 auto;
+					background: #d5d5d5;
+					@include max-screen( 768px ){
+						display: none;
+					}
+				}	
+				@include min-screen( 1200px ){
+					width: 68.75%;
+				}
+			}
+		}
+	}
+
+	.entry-title{
+		font-size:18px;
+		line-height: 24px;
+		padding: 2px 0 6px 60px;
+		margin: 0 0 9px;
+		background-position: top left;
+		background-repeat: no-repeat;
+		@include lato;
+		&.icon-pc{
+			background-image: url(images/fixed/icon-pc.png);
+		}
+		&.icon-ruby{
+			background-image: url(images/fixed/icon-ruby.png);
+		}
+		&.icon-code{
+			background-image: url(images/fixed/icon-code.png);
+		}
+		&.icon-training{
+			background-image: url(images/fixed/icon-training.png);
+		}
+		@include max-screen( 768px ){
+			padding: 2px 0 6px 45px;
+		}
+	}
+
+	.table-row{
+		&:first-child{
+			.entry-item{
+				&:first-child{
+					&:before{
+						display: none;
+					}
+				}
+				&:before{
+					display: none;
+					@include max-screen( 768px ){
+						display: block;
+					}
+				}
+			}
+		}
+	}
+
+	.entry-item{
+		padding: 54px 60px 0;
+		width: 50%;
+		position: relative;
+		overflow: hidden;
+		display: table-cell;
+		@include max-screen(1280px){
+			padding: 35px 29px 0;
+		}
+		@include max-screen( 768px ){
+			width: 100%;
+			display: block;
+			padding: 35px 15px 0;
+		}
+
+		&:before{
+			content:'';
+			display: block;
+			height: 1px;
+			background: #d5d5d5;
+			max-width: 330px;
+			position: absolute;
+			left: 110px;
+			right: 10px;
+			top: 0;
+			@include max-screen(1280px){
+				left: 89px;
+			}
+		}
+		.entry-box{
+			padding: 0 0 30px 60px;
+			position: relative;
+			@include max-screen( 768px ){
+				padding: 0 0 30px 45px;
+			}
+		}
+		p{
+			line-height: 25px;
+			margin: 0;
+			color: $cl-gray;
+		}
+	}
+}

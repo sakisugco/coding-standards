@@ -1,0 +1,210 @@
+.mod-center-1, .l-style {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-2, .l-wrap, .lead {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-3 {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-4 {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 979px) {
+  .mod-center-1, .l-style {
+    width: 980px;
+    padding: 0 20px;
+    box-sizing: border-box; }
+
+  .mod-center-2, .l-wrap, .lead {
+    width: 900px;
+    box-sizing: border-box; }
+
+  .mod-center-3 {
+    width: 980px;
+    box-sizing: border-box; }
+
+  .mod-center-4 {
+    width: 980px;
+    box-sizing: border-box; } }
+@media screen and (max-width: 767px) {
+  .mod-center-1, .l-style {
+    width: 100%; }
+
+  .mod-center-2, .l-wrap, .lead {
+    width: 100%; }
+
+  .mod-center-3 {
+    width: 100%; }
+
+  .mod-center-4 {
+    width: 100%; } }
+.l-wrap {
+  zoom: 1; }
+  .l-wrap:before, .l-wrap:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .l-wrap:after {
+    clear: both; }
+
+.l-text {
+  float: left;
+  width: 520px;
+  margin: 0; }
+  .l-text > h2 {
+    margin-top: 0; }
+  .l-text p {
+    width: 520px; }
+
+.l-image {
+  float: right;
+  width: 340px; }
+  .l-image p {
+    margin-top: 40px;
+    margin-bottom: 0px; }
+  .l-image .caption {
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0 0 30px 0; }
+  .l-image > p {
+    margin-top: 0; }
+
+.lead {
+  margin-top: 0; }
+  .lead p {
+    width: 720px; }
+
+.laboType {
+  zoom: 1; }
+  .laboType:before, .laboType:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .laboType:after {
+    clear: both; }
+
+.laboType1,
+.laboType2,
+.laboType3 {
+  width: 301px;
+  float: left; }
+
+.laboType2 {
+  margin: 0 38px 0 39px; }
+
+.typeHead {
+  margin: 0 0 10px 0;
+  line-height: 32px;
+  font-size: 16px; }
+  .typeHead span {
+    text-align: center;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 18px;
+    margin: 0 6px 0 0; }
+
+.typeImage {
+  margin: 0; }
+
+.typeDesc {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0; }
+
+.laboEx {
+  zoom: 1; }
+  .laboEx:before, .laboEx:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .laboEx:after {
+    clear: both; }
+  .laboEx p {
+    float: left;
+    width: 521px; }
+  .laboEx ul {
+    float: right;
+    width: 420px; }
+  .laboEx li {
+    height: 52px;
+    list-style: none;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 60px;
+    margin-bottom: 18px; }
+  .laboEx .laboEx1 {
+    background: url(../images/img_style_labo_05.png) left center no-repeat; }
+  .laboEx .laboEx2 {
+    background: url(../images/img_style_labo_06.png) left center no-repeat; }
+  .laboEx .laboEx3 {
+    background: url(../images/img_style_labo_07.png) left center no-repeat; }
+  .laboEx .laboEx4 {
+    background: url(../images/img_style_labo_08.png) left center no-repeat; }
+
+.case_example {
+  overflow: hidden;
+  margin-bottom: 40px; }
+
+.example {
+  float: left;
+  width: 308px;
+  height: 288px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  position: relative; }
+  .example:first-child {
+    margin-right: 20px; }
+  .example:nth-child(2) {
+    margin-right: 20px; }
+  .example:last-child {
+    margin-right: 0; }
+  .example p {
+    margin: 0; }
+    .example p.category {
+      text-align: center;
+      background: #ccc;
+      margin: 10px;
+      color: #fff;
+      padding: 3px 0; }
+      .example p.category.category-web {
+        background-color: #50B6B0; }
+      .example p.category.category-app {
+        background-color: #F2734A; }
+      .example p.category.category-infra {
+        background-color: #b3bec6; }
+    .example p.title {
+      text-align: center;
+      margin: 20px 0 10px 0;
+      line-height: 1.5;
+      font-size: 18px;
+      height: 62px; }
+    .example p.desc {
+      padding: 20px;
+      font-size: 14px;
+      line-height: 1.8;
+      border-top: 1px dotted #ccc; }
+    .example p.develop {
+      position: absolute;
+      bottom: 0px;
+      width: 265px;
+      padding: 8px 20px;
+      font-size: 12px;
+      line-height: 1.5;
+      border-top: 1px solid #ccc; }

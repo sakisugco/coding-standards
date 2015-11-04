@@ -1,0 +1,142 @@
+@import "setup", "mixin-module", "extend-module";
+
+.l-member {
+  @extend .mod-center-1;
+}
+
+
+.memberList {
+  @include clearfix;
+  @extend .mod-center-1;
+  padding-top: 40px;
+  margin-bottom: 40px;
+  li {
+    position: relative;
+    list-style: none;
+    float: left;
+    margin-right: 20px;
+  }
+  p {
+    margin: 0;
+    background-color: $red;
+    border-radius: 180px;
+    line-height: 0;
+    cursor: pointer;
+    &:hover img {
+      opacity: 0.2;
+    }
+    &:hover span {
+      display: block;
+    }
+  }
+  dl {
+    margin: 8px 0 0 0;
+    width: 180px;
+    text-align: center;
+  }
+  dt {
+    margin: 0;
+    font-size: 18px;
+  }
+  dd {
+    margin: 0;
+    font-size: 12px;
+  }
+  span {
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 230px;
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    line-height: 230px;
+    text-align: center;
+  }
+  img {
+    @include css3(transition, 0.1s);
+    z-index: 0;
+    &.is-selected {
+      opacity: 0.2;
+      &:after {
+        content: "block";
+        color: #333;
+        position: absolute;
+        display: block;
+      }
+      &+ span {
+        display: block;
+      }
+    }
+  }
+
+  .m4 {
+    margin-right: 0 !important;
+  }
+
+}
+
+.stage {
+  display: none;
+  height: 290px;
+  background-color: #eee;
+  position:relative;
+  margin-bottom: 30px;
+  .m1,
+  .m2,
+  .m3,
+  .m4 {
+    display: none;
+    @extend .mod-center-1;
+    background-color: #eee;
+    position: absolute;
+    left: 50%;
+    margin-left: -490px;
+  }
+
+
+  .m1:after,
+  .m2:after,
+  .m3:after,
+  .m4:after {
+    border: 20px solid transparent;
+    border-bottom-color: #eee;
+    border-top-width: 0;
+    top: -20px;
+    content: "";
+    display: lock;
+    position: absolute;
+    width: 0;
+  }
+
+
+
+  .m1:after {
+    left: 95px;
+  }
+
+  .m2:after {
+    left: 345px;
+  }
+  .m3:after {
+    left: 595px;
+  }
+  .m4:after {
+    left: 845px;
+  }
+}
+.is-opened {
+
+}
+.l-hirai .pName { padding-top: 35px; }
+.l-honma .pName { padding-top: 15px; }
+.l-kobayashi .pName { padding-top: 25px; }
+.l-dung .pName { padding-top: 25px; }
+.l-ngoc .pName { padding-top: 25px; }
+.l-miyake .pName { padding-top: 35px; }
+
+.banner_homma {
+  position: absolute;
+  top: 50px;
+  left: 420px;
+}

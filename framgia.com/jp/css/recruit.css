@@ -1,0 +1,123 @@
+.mod-center-1, .l-recruit {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-2, .section {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-3 {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-4 {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 979px) {
+  .mod-center-1, .l-recruit {
+    width: 980px;
+    padding: 0 20px;
+    box-sizing: border-box; }
+
+  .mod-center-2, .section {
+    width: 900px;
+    box-sizing: border-box; }
+
+  .mod-center-3 {
+    width: 980px;
+    box-sizing: border-box; }
+
+  .mod-center-4 {
+    width: 980px;
+    box-sizing: border-box; } }
+@media screen and (max-width: 767px) {
+  .mod-center-1, .l-recruit {
+    width: 100%; }
+
+  .mod-center-2, .section {
+    width: 100%; }
+
+  .mod-center-3 {
+    width: 100%; }
+
+  .mod-center-4 {
+    width: 100%; } }
+.l-recruit .fltRight {
+  padding: 0 0 40px 20px; }
+.l-recruit ul {
+  padding-left: 20px; }
+.l-recruit li {
+  list-style-position: outside;
+  line-height: 26px; }
+.l-recruit p {
+  width: 720px; }
+.l-recruit ol {
+  padding: 20px 50px;
+  margin: 20px auto 40px auto;
+  background-color: #eee; }
+.l-recruit dl, .l-recruit dt, .l-recruit dd {
+  margin: 0;
+  padding: 0; }
+.l-recruit dl {
+  zoom: 1;
+  background-color: #eee;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .l-recruit dl:before, .l-recruit dl:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .l-recruit dl:after {
+    clear: both; }
+.l-recruit dt {
+  margin: 0;
+  font-size: 16px;
+  padding: 20px 0;
+  padding-left: 20px;
+  float: left;
+  width: 160px;
+  border-top: 1px solid #ccc; }
+.l-recruit dd {
+  float: left;
+  width: 657px;
+  min-height: 24px;
+  padding: 20px 30px;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  background-color: #f8f8f8; }
+  .l-recruit dd p {
+    width: auto;
+    font-size: 14px; }
+    .l-recruit dd p:last-child {
+      margin-bottom: 0; }
+
+@media screen and (max-width: 767px) {
+  .l-recruit p {
+    width: 100%; }
+  .l-recruit dt {
+    margin: 0;
+    font-size: 16px;
+    padding: 10px 0;
+    padding-left: 20px;
+    float: none;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    box-sizing: border-box; }
+  .l-recruit dd {
+    float: none;
+    width: 100%;
+    box-sizing: border-box;
+    border-left: none;
+    padding: 20px; }
+    .l-recruit dd p {
+      width: auto;
+      font-size: 14px; }
+      .l-recruit dd p:last-child {
+        margin-bottom: 0; } }

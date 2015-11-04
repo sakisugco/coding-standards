@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>VietNam IT Jobfair | ハノイ工科大学新卒採用ジョブフェア</title>
+  <meta name="description" content="グローバルレベルで「優秀」だから採用する、ベトナム理系トップ大学日本語バイリンガルITエンジニア新卒採用フェア">
+  <meta name="keywords" content="VietNam JOBFAIR, ベトナム ジョブフェア">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta property="og:title" content="VietNam IT Jobfair | ハノイ工科大学新卒採用ジョブフェア">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="http://framgia.com/jobfair/">
+  <meta property="og:image" content="">
+  <meta property="og:description" content="グローバルレベルで「優秀」だから採用する、ベトナム理系トップ大学日本語バイリンガルITエンジニア新卒採用フェア">
+  <meta property="og:site_name" content="VietNam IT Jobfair | ハノイ工科大学新卒採用ジョブフェア">
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="./css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!--[if lt IE 9]>
+  <script src="./js/lib/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60613670-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.3&appId=1578735805701226";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="header">
+  <div class="pure-g">
+    <p class="logo"><img src="./images/logo.png" width="212" height="21" alt=""></p>
+    <p>September, 2015 | Hanoi</p>
+    <ul class="gnav">
+      <li><a href="#summary" class="scroll">開催概要</a></li>
+      <li><a href="#bachkhoa" class="scroll">ハノイ工科大学について</a></li>
+      <li><a href="#company" class="scroll">採用企業</a></li>
+      <li><a href="#faq" class="scroll">よくある質問</a></li>
+      <li><a href="#flow" class="scroll">採用までの流れ</a></li>
+    </ul>
+    <a class="pure-button button-green scroll" href="#inquiry">お問い合わせ</a>
+  </div>
+</div>
+
+
+
+<?php
+error_reporting(0);
+$valid = true;
+$params = array('company_name', 'your_name', 'email_address', 'phone_number', 'inquiry');
+foreach($params as $param){
+  $$param = $_POST[$param];
+  if ($param != 'phone_number'){
+    if ($_POST[$param] == null) {
+       $valid = false;
+    }
+  }
+  if($_POST[$param] != strip_tags($_POST[$param])) {
+    $valid = false;
+  }
+}
+if ($valid == false){
+?>
+
+<div class="main">
+  <div class="inner2">
+    <div class="window">
+      <p class="shoulder">グローバルレベルで「優秀」だから採用する</p>
+      <h1>ベトナム理系トップ大学<br>
+        日本語バイリンガルITエンジニア<br>
+        新卒採用フェア</h1>
+      <p class="date">2015年9月開催</p>
+    </div>
+  </div>
+</div>
+
+<div class="intro">
+  <div class="inner2">
+    <p>日本におけるIT人材は量的不足が指摘されていますが、質的にも不足しています。私たちフランジアはこの問題を海外で解消するべく、ベトナムでオフショア開発会社として拠点を構える一方、ハノイ工科大学と正式に産学連携を結び、ベトナム人の日本語IT育成へ様々な取り組みを行っております。<br>日本語とITを学ぶ学生は日本での就職を強く希望しており、フランジアとハノイ工科大学は日本企業に優秀な学生を紹介するため、現地にてジョブフェアを共催しております。</p>
+  </div>
+</div>
+
+
+<div class="point">
+  <div class="inner2">
+    <h2>内定者がエンジニアとして即戦力になれる3つのポイント</h2>
+    <div class="point-item">
+      <p class="point-image"><img src="./images/point_01.png" width="169" height="169" alt=""></p>
+      <p class="point-head">POINT 1</p>
+      <h3>ハノイ工科大学HEDSPIプロジェクト</h3>
+      <p class="point-text">ベトナム理系トップのハノイ工科大学にて、日本のODAによるHEDSPIと呼ばれる日本語が使えるエンジニアを育成するプロジェクトを行っています。</p>
+    </div>
+    <div class="point-item">
+      <p class="point-image"><img src="./images/point_02.png" width="169" height="169" alt=""></p>
+      <p class="point-head">POINT 2</p>
+      <h3>フランジアITカリキュラム</h3>
+      <p class="point-text">内定者は弊社の新入社員向けRubyトレーニングを２ヶ月ほど受講します。その後規定のレベルに達した者からフランジアの社内プロジェクトにOJTとして参加します。</p>
+    </div>
+    <div class="point-item">
+      <p class="point-image"><img src="./images/point_03.png" width="169" height="169" alt=""></p>
+      <p class="point-head">POINT 3</p>
+      <h3>フランジア日本語教育カリキュラム</h3>
+      <p class="point-text">ハノイ工科大学の日本語授業の他に大学内でフランジアが提供する授業外授業や日本人との会話トレーニングなどを内定者用にご用意しています。</p>
+    </div>
+  </div>
+</div>
+
+<div class="summary" id="summary">
+  <div class="inner2">
+    <h2>開催概要</h2>
+    <dl>
+      <dt>開催日</dt>
+      <dd>2015年9月</dd>
+      <dt>会場</dt>
+      <dd>ハノイ工科大学 (Hanoi, Vietnam)</dd>
+      <dt>主催</dt>
+      <dd>株式会社フランジア・ジャパン</dd>
+      <dt>共催</dt>
+      <dd>ハノイ工科大学</dd>
+      <dt>後援</dt>
+      <dd>JICA 独立行政法人国際協力機構</dd>
+    </dl>
+    <a class="pure-button button-green scroll" href="#inquiry">お問い合わせ</a>
+  </div>
+</div>
+
+<div id="bachkhoa" class="about">
+  <div class="inner2">
+    <h2>ハノイ工科大学とはどんな大学？</h2>
+    <p>ハノイ工科大学は1956年に理系分野の教育・研究活動において先導的役割を果たすために設立されたベトナム最初の国立技術系総合大学です。日本のODAによってHEDSPIという日本語が使えるエンジニアを育成するプロジェクトを行っています。<br>
+    また、東京工業大学、京都大学、慶應義塾大学、立命館大学など日本の多くの大学と交流協定を結んでいます。</p>
+    <div class="about-box">
+      <h3>HEDSPIプロジェクトについて</h3>
+      <p class="about-image"><img src="./images/img_01.jpg" width="400" height="215" alt=""></p>
+      <p>HEDSPI （Higher Education Development Support Project on ICT） とは、日本語のできる高度IT人材を育成するために、日本のODAを使用して2006年にハノイ工科大学で開始されたプロジェクトです。毎年ハノイ工科大の入学者3500名の中から選抜し、日本語や日本の商習慣を理解し、日本とベトナムの間を橋渡しすることができるITSS レベル3（業務に必要な知識を持ち合わせ、独力で業務を進めることができるレベル）相当に対応するスキルを持ったブリッジSE人材をIT関連産業界に供給することを掲げています。</p>
+      <p>HEDSPIは「ハノイ工科大学ITSS教育能力強化プロジェクト」と円借款事業「高等教育支援事業（ITセクター）」の二つで構成され、技術協力では、経済産業省が策定したIT技術者の実務能力指標「情報処理技術者スキル標準（ITSS）」を基に、大学のカリキュラム、シラバス、教材を開発するとともに、教授法を伝えています。円借款事業では機材の購入や日本語教育、日本の大学（立命館大学、慶應義塾大学、会津大学）へのHEDSPIから約20名の留学生派遣（2014年終了）を行っています。</p>
+    </div>
+  </div>
+</div>
+
+<div id="company">
+  <div class="inner">
+  <h2>採用企業一覧</h2>
+  <ul>
+    <li class="logo1"><img src="./images/logo_ascend.png" width="71" height="57" alt="株式会社アセンド"></li>
+    <li class="logo2"><img src="./images/logo_camobile.png" width="195" height="16" alt="株式会社シーエー・モバイル"></li>
+    <li class="logo3"><img src="./images/logo_dentsumacromill.png" width="193" height="45" alt="株式会社電通マクロミルインサイト"></li>
+    <li class="logo4"><img src="./images/logo_eole.png" width="150" height="38" alt="株式会社イオレ"></li>
+    <li class="logo5"><a href="http://www.hr-s.co.jp/" target="_blank"><img src="./images/logo_hrsolutions.png" width="169" height="32" alt="HRソリューションズ株式会社"></a></li>
+    <li class="logo6"><img src="./images/logo_netprotections.png" width="201" height="32" alt="株式会社ネットプロテクションズ "></li>
+    <li class="logo7"><img src="./images/logo_payroll.png" width="177" height="31" alt="株式会社ぺイロール"></li>
+    <li class="logo8"><img src="./images/logo_ponos.png" width="156" height="28" alt="ポノス株式会社"></li>
+    <li class="logo9"><img src="./images/logo_realworld.png" width="211" height="39" alt="株式会社リアルワールド"></li>
+    <li class="logo10"><img src="./images/logo_tokaicommunications.png" width="212" height="37" alt="株式会社TOKAIコミュニケーションズ"></li>
+    <li class="logo11"><img src="./images/logo_uzabase.png" width="201" height="34" alt="株式会社ユーザベース"></li>
+    <li class="logo12"><img src="./images/logo_verve.png" width="152" height="33" alt="株式会社VERVE"></li>
+  </ul>
+  </div>
+
+</div>
+
+<div id="faq">
+  <div class="inner2">
+  <h2>よくある質問</h2>
+    <p class="faq-q">ベトナムの新卒学生を採用するメリットはなんでしょうか？</p>
+    <p class="faq-a">ベトナムは国際数学オリンピックでは毎年100ヶ国中、10位以内常連国で日本よりも成績は上です。またベトナムの理数系トップの頭脳はプログラマになります。ハノイ工科大のHEDSPIはそのような世界的にも優れた頭脳を持った理系人材が日本語とプログラミングを勉強するプログラムなのです。<br>
+日本のトップ大学の情報工学学部卒業生と比べても地頭、数学、プログラミングスキルで劣るとことはほとんどありません。もちろん日本語力はネイティブレベルではありませんが、プログラミングの現場では十分に力を発揮してくれます。</p>
+
+    <p class="faq-q">なぜ日本での就職を希望しているのですか？</p>
+    <p class="faq-a">HEDSPIの学生のほとんどは下記理由から日本での就職を希望しています。<br>
+    １．日本の優秀なエンジニアと一緒に仕事することでスキルを磨きたい<br>
+    ２．日本語能力を向上させたい<br>
+    ３．ベトナムに比べ日本での待遇が魅力的</p>
+
+    <p class="faq-q">今回採用した場合の入社時期はいつになりますか？</p>
+    <p class="faq-a">学生の卒業年がバラバラのため学生によって異なりますが、通常は来年の8月卒業か今年の8月卒業になります。</p>
+
+    <p class="faq-q">面接は何語で実施すれば良いでしょうか？</p>
+    <p class="faq-a">基本的には日本語で行っていただきます。しかし、弊社の通訳を付けさせていただきます。コミュニケーションがスムーズに行かない場合通訳が助け舟を出すことで面接をサポートいたします。</p>
+
+    <p class="faq-q">ベトナム人学生を採用した場合、ジョブフェア参加費以外にどのようなものがありますか？</p>
+    <p class="faq-a">入社時の日本への渡航費用（各社の取り決めによる）、ビザ取得費用、健康診断費用になどがあります。また渡日する前に住居を用意しく必要があります。家賃は給料から天引きしても物件は法人契約とすることをお勧めいたします。ベトナム人が契約者だと大家さんが契約をしてくれないケースがございます。</p>
+
+    <p class="faq-q">採用したベトナム人の給料などの待遇はどうすればいいですか？</p>
+    <p class="faq-a">基本的には日本人の新卒と同じ条件で構いません。</p>
+  </div>
+</div>
+
+<div id="flow">
+  <div class="inner2">
+    <h2>採用までの流れ</h2>
+    <div class="flow-item">
+      <p><img src="./images/flow_01.png" width="180" height="180" alt=""></p>
+      <p>実際にハノイにてグループ面接と個別面接を行っていただきます。</p>
+    </div>
+    <div class="flow-item">
+      <p><img src="./images/flow_02.png" width="180" height="180" alt=""></p>
+      <p>面接後に採用する学生に内定を出します。企業側の責任者と学生が内定書にサインします。</p>
+    </div>
+    <div class="flow-item">
+      <p><img src="./images/flow_03.png" width="180" height="180" alt=""></p>
+      <p>日本で長期間働くための就労ビザを取得します。</p>
+    </div>
+    <div class="flow-item">
+      <p><img src="./images/flow_04.png" width="180" height="180" alt=""></p>
+      <p>卒業後に日本へ招致し、就業します。</p>
+    </div>
+  </div>
+  <div class="inner2">
+    <h3>面接のスケジュール</h3>
+    <div class="schedule">
+      <div class="schedule-item">
+        <h4>1日目：会社説明会 (16:00〜18:00)</h4>
+        <div>
+          <ul>
+            <li>学生に向けて20分程度、御社の会社説明を行っていただきます。</li>
+            <li>説明会終了後は学生に希望調査を行い、翌日のグループ面接を受ける学生を決定していただきます。</li>
+          </ul>
+        </div>
+        <p><img src="./images/img_02.jpg" width="370" height="200" alt=""></p>
+      </div>
+      <div class="schedule-item">
+        <h4>2日目：グループ面接 (9:00〜16:00)</h4>
+        <div>
+          <ul>
+            <li>1グループ5〜6名、通訳を介して30分程度の面接を行います。</li>
+            <li>各面接の間に10分間の評価時間を設けています。</li>
+            <li>全ての面接終了後、翌日の個人面接へと進む学生を決めていただきます。</li>
+          </ul>
+        </div>
+        <p><img src="./images/img_03.jpg" width="370" height="200" alt=""></p>
+      </div>
+      <div class="schedule-item">
+        <h4>3日目：個人面接 (9:00〜16:00)</h4>
+        <div>
+          <ul>
+            <li>通訳を介して30分程度の面接を行います。</li>
+            <li>全ての面接終了後、内定を出していただき学生に通知します。</li>
+          </ul>
+        </div>
+        <p><img src="./images/img_04.jpg" width="370" height="200" alt=""></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="after">
+  <div class="inner2">
+    <h2>内定後も、入社まで学生をサポート</h2>
+    <h3 class="after-japanese">フランジア日本語教育カリキュラム</h3>
+    <h4>①提携先日本語学校</h4>
+    <p>日系企業により運営される、栄光スクールハノイ校に通えます。<br>
+本スクールでは、日本語能力検定試験（N1（ネイティブレベル）〜N3（日常生活レベル））対策講座を選択して受講頂けます。<br>
+ジョブフェア基本契約に含まれており、無料で受講頂けます。</p>
+
+    <h4>②弊社独自コース</h4>
+    <p>一般的な日本語講座ではカバーできない「日本でITを仕事とする外国人に必要な日本語」を想定した講座を開催いたします。<br>
+・名刺交換やメールの書き方等のビジネスルール<br>
+・日本の文化、生活に必要となる言葉や電車の乗り方等の知識<br>
+・ITの仕事場でよく利用されるカタカナ言葉<br>
+※講師は全て弊社が用意した日本人が担当し、「生」の日本語に触れることを重要視しています。弊社が3年以上ハノイでオフショアビジネスをしている知見を活かし、ベトナム人がITビジネスに携わる上で困ることを想定したコースにいたしました。</p>
+
+    <p class="after-image"><img src="./images/img_05.jpg" width="980" height="370" alt=""></p>
+    <h3 class="after-it">フランジアIT教育カリキュラム</h3>
+    <p>フランジアでは自社採用社員に向けて弊社トレーニングルームでIT研修を実施しています。貴社の内定学生に本研修へご参加頂きます。<br>
+標準的な研修期間は2ヶ月で、webアプリケーション作成に必要なIT基礎知識の座学から、実際にコードを書く演習、最後はチームでwebアプリケーションを実装する模擬プロジェクトを行います。<br>
+研修は専任のマネージャーが全体を管理しており、定期的に受講者のスキル評価を行っています。<br>
+この研修では言語にRubyを用い、Ruby on Railsを用いてアプリケーションを実装します。<br>
+スマートフォンアプリケーション開発がメインとなる場合、webアプリケーションの実装は受講しない、等の調整も可能です。<br>
+※言語やフレームワークを貴社の選択に併せての開催については、ご相談下さい。</p>
+    <p class="after-image"><img src="./images/img_06.jpg" width="980" height="370" alt=""></p>
+    <h3 class="after-parent">父母会</h3>
+    <p>貴社人事部の方等や配属先部署の方にベトナムへお越し頂き、貴社内定学生およびその親御様との懇親会を設定いたします。<br>
+貴社のベトナム訪問時のアテンド、参加者全員のスケジュール調整、会場の設営・準備や懇親会後の会食手配等を弊社が担当いたします。<br>
+過去参加された親御様より、外国で働くことになるご子息を安心して送れるとの感想を頂いており、日本以上に家族を大切にする文化のベトナムではこのような父母会を開催されることをお勧めします。</p>
+  </div>
+</div>
+
+
+
+        <form id="contact_form" action="" method="POST">
+<div id="inquiry">
+  <div class="inner2">
+    <h2>お問い合わせ</h2>
+    <table>
+      <tr>
+        <th>貴社名<span class="required">必須</span></th>
+        <td><input type="text" name="company_name"></td>
+      </tr>
+      <tr>
+        <th>ご担当者名<span class="required">必須</span></th>
+        <td><input type="text" name="your_name"></td>
+      </tr>
+      <tr>
+        <th>Eメールアドレス<span class="required">必須</span></th>
+        <td><input type="text" name="email_address"></td>
+      </tr>
+      <tr>
+        <th>電話番号<span class="optional">任意</span></th>
+        <td><input type="text" name="phone_number"></td>
+      </tr>
+      <tr>
+        <th>お問い合せ内容<span class="required">必須</span></th>
+        <td><textarea name="inquiry"></textarea></td>
+      </tr>
+    </table>
+
+
+    <div class="privacy">
+      <h3>【個人情報の取り扱いについて】</h3>
+      <ul>
+        <li>このお問い合わせフォームでご提供いただく個人情報は、お問い合わせを適切に受け付けて管理するため、及び弊社が提供するサービスに関する情報を電子メール等でご提供するために利用します。</li>
+        <li>当個人情報を第三者に提供することはありません。</li>
+        <li>当個人情報の取扱いを委託することがあります。委託にあたっては、委託先における個人情報の安全管理が図られるよう、委託先に対する必要かつ適切な監督を行います。</li>
+        <li>当個人情報の利用目的の通知、開示、内容の訂正・追加または削除、利用の停止・消去および第三者への提供の停止（「開示等」といいます。）を受け付けております。開示等の求めは、以下の「個人情報苦情及び相談窓口」で受け付けます。<br>
+        ＜個人情報苦情及び相談窓口＞<br>株式会社フランジア・ジャパン　個人情報保護管理者（経営管理本部長)　メール：<br><a href="m&#97;i&#108;t&#111;&#58;priv&#97;cy&#64;fr&#97;mgia&#46;co&#46;&#106;&#112;">priv&#97;cy&#64;fr&#97;mgia&#46;co&#46;&#106;&#112;</a><br>上記を確認の上、ご同意いただける方は「同意して送信」ボタンを押してください。</li>
+      </ul>
+    </div>
+    <input type="submit" value="同意して送信" class="pure-button button-green">
+  </div>
+</div>
+        </form>
+
+
+
+
+<?php
+ } else {
+  $body  = '貴社名：'.$company_name."\n";
+  $body .= 'ご氏名：'.$your_name."\n";
+  $body .= 'Eメールアドレス：'.$email_address."\n";
+  $body .= '電話番号：'.$phone_number."\n";
+  $body .= 'お問い合わせ内容：'."\n".$inquiry."\n";
+  mail('kazunari.fujimoto@framgia.com', 'Inquirey via Jobfair site', $body, 'From:info@framgia.com');
+?>
+
+
+<div id="inquiry">
+  <div class="inner2">
+    <h2>下記内容で承りました</h2>
+    <p>※折り返し担当者よりご連絡差し上げます。<br> ご連絡先をお間違えになっているとご連絡さし上げられない場合がありますので予めご了承下さい。</p>
+    <table class="confirm">
+      <tr>
+        <th>貴社名</th>
+        <td><?php echo htmlspecialchars($company_name);?></td>
+      </tr>
+      <tr>
+        <th>ご担当者名</th>
+        <td><?php echo htmlspecialchars($company_name);?></td>
+      </tr>
+      <tr>
+        <th>Eメールアドレス</th>
+        <td><?php echo htmlspecialchars($your_name);?></td>
+      </tr>
+      <tr>
+        <th>電話番号</th>
+        <td><?php echo htmlspecialchars($phone_number);?></td>
+      </tr>
+      <tr>
+        <th>ご質問</th>
+        <td><?php echo htmlspecialchars($inquiry);?></td>
+      </tr>
+    </table>
+
+
+    <a href="./index.html" class="pure-button button-green">トップページに戻る</a>
+  </div>
+</div>
+
+      <?php } ?>
+
+
+
+<div class="footer">
+  <small>&copy; Framgia, Inc. All Rights Reserved.</small>
+</div>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="./js/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="http://framgia.com/jp/js/lib/jquery.validate.min.js"></script>
+  <script src="http://framgia.com/jp/js/contact.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,308 @@
+.mod-center-1, .l-member, .memberList, .stage .m1,
+.stage .m2,
+.stage .m3,
+.stage .m4,
+.stage .m5 {
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-2 {
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-3 {
+  width: 820px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.mod-center-4 {
+  width: 680px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@media screen and (max-width: 979px) {
+  .mod-center-1, .l-member, .memberList, .stage .m1,
+  .stage .m2,
+  .stage .m3,
+  .stage .m4,
+  .stage .m5 {
+    width: 980px;
+    padding: 0 20px;
+    box-sizing: border-box; }
+
+  .mod-center-2 {
+    width: 900px;
+    box-sizing: border-box; }
+
+  .mod-center-3 {
+    width: 980px;
+    box-sizing: border-box; }
+
+  .mod-center-4 {
+    width: 980px;
+    box-sizing: border-box; } }
+@media screen and (max-width: 767px) {
+  .mod-center-1, .l-member, .memberList, .stage .m1,
+  .stage .m2,
+  .stage .m3,
+  .stage .m4,
+  .stage .m5 {
+    width: 100%; }
+
+  .mod-center-2 {
+    width: 100%; }
+
+  .mod-center-3 {
+    width: 100%; }
+
+  .mod-center-4 {
+    width: 100%; } }
+h2 {
+  width: 980px;
+  margin: 0 auto;
+  padding: 60px 0 30px 0; }
+
+.memberList {
+  zoom: 1;
+  margin-bottom: 30px; }
+  .memberList:before, .memberList:after {
+    display: block;
+    height: 0;
+    visibility: hidden;
+    content: "\0020"; }
+  .memberList:after {
+    clear: both; }
+  .memberList li {
+    position: relative;
+    list-style: none;
+    float: left;
+    margin-right: 20px; }
+  .memberList p {
+    margin: 0;
+    border-radius: 180px;
+    line-height: 0;
+    cursor: pointer;
+    background-color: #e74c3c; }
+    .memberList p:hover img {
+      opacity: 0.2; }
+    .memberList p:hover span {
+      display: block; }
+  .memberList dl {
+    margin: 8px 0 0 0;
+    width: 180px;
+    text-align: center; }
+  .memberList dt {
+    margin: 0;
+    font-size: 1.8rem; }
+  .memberList dd {
+    margin: 0;
+    font-size: 1.2rem; }
+  .memberList span {
+    display: none;
+    top: 0px;
+    left: 0px;
+    width: 180px;
+    color: #fff;
+    font-size: 1.8rem;
+    position: absolute;
+    line-height: 180px;
+    text-align: center; }
+  .memberList img {
+    -webkit-transition: 0.1s;
+    -moz-transition: 0.1s;
+    -ms-transition: 0.1s;
+    -o-transition: 0.1s;
+    transition: 0.1s;
+    z-index: 0; }
+    .memberList img.is-selected {
+      opacity: 0.2; }
+      .memberList img.is-selected:after {
+        content: "block";
+        color: #333;
+        position: absolute;
+        display: block; }
+      .memberList img.is-selected + span {
+        display: block; }
+  .memberList .m5 {
+    margin-right: 0 !important; }
+
+.stage {
+  display: none;
+  height: 290px;
+  background-color: #eee;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  .stage .pPos {
+    font-size: 1.6rem;
+    margin-top: 6px; }
+  .stage .m1,
+  .stage .m2,
+  .stage .m3,
+  .stage .m4,
+  .stage .m5 {
+    display: none;
+    background-color: #eee;
+    position: absolute;
+    left: 50%;
+    margin-left: -490px; }
+  .stage .m1:after,
+  .stage .m2:after,
+  .stage .m3:after,
+  .stage .m4:after,
+  .stage .m5:after {
+    border: 20px solid transparent;
+    border-bottom-color: #eee;
+    border-top-width: 0;
+    top: -20px;
+    content: "";
+    display: lock;
+    position: absolute;
+    width: 0; }
+  .stage .m1:after {
+    left: 70px; }
+  .stage .m2:after {
+    left: 270px; }
+  .stage .m3:after {
+    left: 470px; }
+  .stage .m4:after {
+    left: 670px; }
+  .stage .m5:after {
+    left: 870px; }
+
+.pName {
+  padding-top: 25px; }
+
+.l-fujimoto .pName {
+  padding-top: 0; }
+
+.l-fujimoto .pDesc {
+  line-height: 1.8; }
+
+.l-honma .pName {
+  padding-top: 25px; }
+
+.l-kobayashi .pName {
+  padding-top: 25px; }
+
+.l-dung .pName {
+  padding-top: 25px; }
+
+.l-ngoc .pName {
+  padding-top: 25px; }
+
+.l-ogura .pName {
+  padding-top: 0; }
+
+.l-nakayama .pName {
+  padding-top: 0; }
+
+.banner_homma {
+  position: absolute;
+  top: 60px;
+  left: 500px; }
+
+@media screen and (max-width: 767px) {
+  h2 {
+    width: 100%;
+    padding: 40px 20px 30px 20px; }
+
+  .memberList {
+    margin-bottom: 30px; }
+    .memberList li {
+      position: relative;
+      list-style: none;
+      float: left;
+      margin-right: 10px; }
+    .memberList p {
+      margin: 10px 0 0 0;
+      border-radius: 120px;
+      line-height: 0;
+      text-align: center;
+      cursor: pointer;
+      background: none; }
+      .memberList p:hover img {
+        opacity: 1; }
+      .memberList p:hover span {
+        display: none; }
+    .memberList dl {
+      margin: 8px 0 0 0;
+      width: 130px;
+      text-align: center; }
+    .memberList dt {
+      margin: 0;
+      font-size: 1.8rem; }
+    .memberList dd {
+      margin: 0;
+      font-size: 1.0rem; }
+    .memberList span {
+      display: none;
+      top: 0px;
+      left: 0px;
+      width: 180px;
+      color: #fff;
+      font-size: 1.8rem;
+      position: absolute;
+      line-height: 180px;
+      text-align: center; }
+    .memberList img {
+      width: 120px;
+      height: 120px;
+      -webkit-transition: 0.1s;
+      -moz-transition: 0.1s;
+      -ms-transition: 0.1s;
+      -o-transition: 0.1s;
+      transition: 0.1s;
+      z-index: 0; }
+      .memberList img.is-selected {
+        opacity: 1; }
+        .memberList img.is-selected:after {
+          display: none; }
+        .memberList img.is-selected + span {
+          display: none; }
+    .memberList .m5 {
+      margin-right: 0 !important; }
+
+  .stage {
+    display: none;
+    position: absolute;
+    top: 0px;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 5%;
+    box-sizing: border-box;
+    z-index: 10000; }
+    .stage .pPos {
+      font-size: 1.6rem;
+      margin-top: 6px; }
+    .stage .pPhoto {
+      display: none; }
+    .stage .m1,
+    .stage .m2,
+    .stage .m3,
+    .stage .m4,
+    .stage .m5 {
+      width: 90%;
+      height: 90%;
+      background-color: #eee;
+      position: absolute;
+      top: 5%;
+      left: 5%;
+      margin: 0;
+      padding: 5%;
+      overflow: scroll; }
+      .stage .m1 p,
+      .stage .m2 p,
+      .stage .m3 p,
+      .stage .m4 p,
+      .stage .m5 p {
+        line-height: 1.5; }
+    .stage > div:after {
+      display: none; }
+    .stage .pName, .stage .l-profile {
+      padding-top: 0 !important; } }
